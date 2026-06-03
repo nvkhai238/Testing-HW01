@@ -1,0 +1,581 @@
+1. KMS 
+Full job description
+Company Description
+
+KMS Technology is a strategic engineering company helping businesses turn bold ideas into high-impact solutions-faster. Founded in 2009 as a U.S.-based services company, we’ve grown into a global organization with locations in the US, Vietnam, Mexico and Poland. KMS is trusted globally for the quality of our engineering and consulting services. We bring deep expertise in product development and quality assurance, Data & AI-native engineering, and delivery excellence to every engagement. Our mission is to help customers build what’s next—accelerating innovation, crafting brilliant solutions, and creating real-world impact. At KMS, we believe sustainable growth is built on the success of our clients and employees, and in making a lasting contribution to our communities.
+
+More about KMS Technology:
+
+Website: https://kms-technology.com
+
+LinkedIn: https://www.linkedin.com/company/kms-technology
+
+
+Job Description
+
+Your key responsibilities:
+
+Perform all testing activities to improve product quality, work closely with the team: test estimation, test planning, test cases design, test execution, defects tracking, etc.
+Collect data and report testing status
+Shows creativity and initiative to improve product test coverage and effectiveness.
+Address the test needs in a methodical, detail-oriented manner with the help of robust analytical skills and problem-solving capacity
+Involve initiatives for supporting the product growth like competitor research, customer troubleshooting, etc.
+Participate in sprint planning and work closely with the Scrum team to analyze requirements and provide necessary QA/test recommendations
+
+Qualifications
+
+General requirements:
+
+Bachelor's degree in Computer Science, Information Technology, or a related field
+Upper-intermediate level of English proficiency, with strong communication skills
+2+ years of hands-on experience in software testing
+Able to self-learn and quickly adapt to new technologies
+Familiar with the Agile development methodologies
+Good collaboration skills with a proven ability to work seamlessly with both customers and team members
+Technical requirements:
+
+Experience in software testing for web-based applications
+Good domain knowledge of the software development process, especially the software testing process
+Solid testing experiences (test approach, test plan, test techniques included black box, risk-based, exploratory, Non-UI testing, etc.)
+Methodical and detail-oriented, with solid analytical skills and problem-solving ability
+Strong dedication to quality and a positive, collaborative attitude and approach to testing
+Nice to have:
+
+Experience in creating and running automated tests using testing frameworks like Katalon/ Selenium/ Robotium/ UiAutomator/ XCTest/ XCUiTest, etc.
+Hand-on experience in using test tools like TestNG/ Mocha/ Jasmine/ Nightwatch, etc.
+Experience using AI chat tools (ChatGPT, Claude, Gemini, etc.) for research, debugging, and learning
+Familiarity with at least one AI coding assistant (GitHub Copilot, Cursor, Claude Code, or similar)
+Ability to write clear, contextual prompts to generate code snippets, unit tests, or documentation
+Awareness of AI output limitations and responsible AI use (data privacy, handling of sensitive client data)
+
+Additional Information
+
+Perks You'll Enjoy
+
+Working in one of the Best Places to Work in Vietnam
+Building large-scale & global software products
+Working & growing with Passionate & Talented Team
+Diverse careers opportunities with Software Outsourcing, Software Product Development, IT Solutions & Consulting
+Attractive Salary and Benefits
+Performance appraisals every year and performance bonus
+Onsite opportunities: short-term and long-term assignments in North American (U.S, Canada), Europe, Asia.
+Flexible working time
+Various training on hot-trend technologies, best practices and soft skills
+Premium healthcare insurance for you and your loved ones
+Company trip, big annual year-end party every year, team building, etc.
+Fitness & sport activities: football, tennis, table-tennis, badminton, yoga, swimming…
+Joining community development activities: 1% Pledge, charity every quarter, blood donation, public seminars, career orientation talks,…
+Free in-house entertainment facilities (foosball, ping pong, gym…), coffee, and snack (instant noodles, cookies, candies…)
+And much more, join us and let yourself explore other fantastic things!
+2. Binance
+Location
+Thành phố Hồ Chí Minh
+&nbsp;
+Full job description
+Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance to education, research, payments, institutional services, Web3 features, and more. We leverage the power of digital assets and blockchain to build an inclusive financial ecosystem to advance the freedom of money and improve financial access for people around the world.
+Responsibilities:
+AI / LLM application quality assurance
+Design and execute end-to-end testing strategies for LLM-based consumer products (functionality, data, model behavior)
+Verify the correctness, consistency, stability, and safety of LLM outputs
+Regression testing and risk assessment for model updates / prompt iterations / data changes
+Automation and tooling capabilities
+Design and develop automated testing and QA tools to improve testing efficiency and coverage
+Use or introduce AI technologies (such as LLM) to enhance test design, defect analysis, and test case generation capabilities
+Requirements:
+Bachelor or Master in computer science, computer engineering or related area.
+At least 3+ years of software QA engineering experiences.
+Full cycle testing with test planning and both manual/automation execution.
+Solid Java coding skills, and experienced in automation or QA tools development.
+Good understanding in AI applications and LLM prompt engineering techniques. Experiences in LLM development or eval is a plus.
+Excellent self-driven and ownership with good deliverables.
+Eager to learn, be curious about AI and new technologies of LLM.
+Good communication and collaboration skills.
+Why Binance
+Shape the future with the world’s leading blockchain ecosystem
+Collaborate with world-class talent in a user-centric global organization with a flat structure
+Tackle unique, fast-paced projects with autonomy in an innovative environment
+Thrive in a results-driven workplace with opportunities for career growth and continuous learning
+Competitive salary and company benefits
+Work-from-home arrangement (the arrangement may vary depending on the work nature of the business team)
+
+Binance is committed to being an equal opportunity employer. We believe that having a diverse workforce is fundamental to our success.
+By submitting a job application, you confirm that you have read and agree to our Candidate Privacy Notice.
+We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.
+3. ISCALE SOLUTION (QA Engineer)
+Location
+Thành phố Hồ Chí Minh
+&nbsp;
+Full job description
+Job Information
+
+Job Opening ID
+
+ZR_945_JOB
+Date Opened
+
+08/05/2025
+Job Type
+
+Full time
+Industry
+
+Technology
+Work Experience
+
+4-5 years
+City
+
+Ho Chi Minh City
+State/Province
+
+Ho Chi Minh
+Country
+
+Vietnam
+Zip/Postal Code
+
+700000
+Job Description
+
+Job Description: Our client is seeking a Quality Assurance Engineer to ensure the quality, reliability, and performance of a next-generation Agentic AI-powered platform.
+
+
+You’ll play a key role in testing complex systems by designing and executing detailed test plans, identifying issues early, and collaborating closely with cross-functional teams to ensure a seamless user experience.
+
+
+Key Responsibilities
+
+
+Design and execute comprehensive test plans and test cases
+Identify, document, and track bugs with clarity and precision
+Conduct functional, regression, integration, and performance testing
+Collaborate with developers and product managers to ensure full requirement coverage
+Automate repetitive test scenarios and integrate them into CI/CD pipelines
+Help establish and maintain QA standards and best practices
+
+Requirements
+
+
+3–5 years of experience in QA or software testing roles
+Strong understanding of QA methodologies, tools, and processes
+Proficient in both manual and automated testing
+Experience testing REST APIs and web/mobile applications
+Familiarity with tools like Selenium, Postman, JMeter, or equivalents
+Working knowledge of Agile development and testing workflows
+Excellent attention to detail and analytical thinking
+
+Nice to Have
+
+
+Experience with CI/CD tools (e.g., Jenkins, GitLab CI)
+Familiarity with scripting languages such as Python or JavaScript
+Experience with performance/load testing tools
+Exposure to AI-based or data-driven software applications
+
+Benefits
+
+Competitive compensation package.
+Flexible remote work arrangements
+Exposure to innovative projects and global clients.
+Collaborative and supportive team culture.
+Opportunities for skill development and career growth.
+4. Persefoni AI (QA Engineer)
+Full job description
+Quality Assurance Engineer- Vietnam
+Company Introduction
+Our mission is to enable every organization to be climate conscious and positive with the world’s best climate software and data products. Persefoni is creating an all-in-one platform that allows organizations to measure, analyze, and reduce their Enterprise Carbon Footprint. Our goal is to provide our customers unprecedented visibility and insights into the impact their organization has on the environment. Leveraging the latest breakthroughs in data science and software, our technology will empower teams and leaders to mobilize their organizations to continuously improve their greenhouse gas emissions metrics.
+
+About The Role (What you will get to do)
+The Quality Assurance (QA) Engineer will work with the team to develop, maintain, and execute automated tests primarily using Cypress.io.
+
+The QA Engineer will serve as a critical member of the quality assurance team, and will be responsible for upholding test code quality standards through code review and coaching. This role will also develop tooling and lay technical foundations to enrich our QA capabilities, while participating in agile ceremonies with their assigned development teams and manually testing new features as they become code complete.
+
+Responsibilities (What we expect)
+Develop & maintain test automation frameworks and automated tests to support day to day operations of web platforms.
+Work together with other Quality Engineers to ensure effective verification of test specifications and requirements.
+Identify areas requiring quality improvement, initiate and follow through on plans of action necessary for implementation.
+Develop new automated test scripts.
+Work closely with Product Owners and Project Managers to ensure effective validation of user needs and business requirements.
+Perform smoke tests and regression testing, both manual and automated, as part of the release cycle.
+Qualifications (What you bring to the role)
+4+ years of professional experience as a QA Automation Engineer or similar role highly focused on software testing automation.
+Strong programming skills in JavaScript.
+Strong experience in designing, creating, and executing complex test plans.
+Strong experience with Playwright.
+Applied knowledge of manual testing.
+Experience in automated API testing, specifically using Postman.
+Experience in writing clear, concise and comprehensive test plans and test cases.
+Experience working in an Agile/Scrum development process.
+Be available as needed to assist in production deployments on alternating Friday evenings from approximately 4pm - 7pm PST.
+Proficiency in the English language is highly preferred.
+Bonus Points:
+Experience with performance and/or security testing.
+Experience with programming languages such as Python and/or Go.
+Knowledge of CI/CD and experience working with Jenkins, CircleCI, or similar tools.
+How You'll Know You’re on the Right Track
+Within your first two weeks, you will have a basic understanding of the Persefoni platform, the roles of the teams that are building it, and where your contributions will be the most valuable. You will also recognize how we apply our culture code (i.e., operating principles) and be able to apply it in your daily activities. You will shadow other QA Engineers to understand the technology and tools we are using, our internal best practices, and start to develop a deep understanding of QA at Persefoni.
+Within your first four weeks, you will understand the needs of our growing QA infrastructure and begin to develop automated tests, quickly and effectively growing our test repo to increase coverage of existing features.
+Within six weeks of your start date, you will grow to fully support one or more application teams by developing automated tests for all new features being developed. You will actively participate in maintaining our automated suite as well as supporting our release processes via both manual and automated testing.
+Job Type:
+Full-time position located in Vietnam governed by Vietnam labour regulations, with the Persefoni entity being established in Vietnam.
+
+Interview Process
+Step 1: Initial screen with talent acquisition
+Step 2: Technical Interview
+Step 3: Interview with Vietnam Country Director
+Step 2: Interview with Engineering Leadership team
+Step 4: Offer extended
+Step 5: Background check and onboarding
+
+Persefoni is an Equal Opportunity employer
+One of our company Core Values is 'Equality' which emphasizes our commitment to value and respect people and organizations of all backgrounds. We proudly bring this to life by fostering a culture of innovation, creativity, diversity of thought, and inclusion.
+
+We strive for each of our team members to be able to show up for work every day as their genuine selves. Similar to the reverence given to Earth’s biodiversity, we recognize the vast potential that exists when all of the facets of diversity within our team are appreciated and illuminated. This policy extends to all aspects of our employment practices.
+5. CyberLogitec VietNam(Automation QC Engineer(Playwright))
+Full job description
+WORK LOCATION
+Ho Chi Minh
+
+LEVEL
+Middle, Senior
+
+EXPIRATION DATE
+31 May,2026
+
+
+JOB DESCRIPTION
+Test Execution: Develop and execute test scripts for automation test cases to ensure product quality and functionality.
+Defect Reporting: Identify, document, and track defects using defect management tools.
+Test Case Development: Develop and maintain comprehensive test cases based on project requirements and specifications.
+Regression Testing: Conduct regression testing to ensure that new features do not adversely affect existing functionalities.
+Collaboration: Work closely with cross-functional teams, including developers, product managers, and other stakeholders, to resolve issues.
+Documentation: Maintain accurate documentation of test results, defect reports, and test case modifications.
+Continuous Improvement: Participate in process improvement initiatives and contribute to best practices in quality assurance.
+Training and Development: Stay updated on industry trends and advancements in quality control methodologies and tools.
+YOUR SKILLS AND EXPERIENCE
+Bachelor’s degree in Computer Science, Information Technology, Logistics, Supply Chain Management, or a related field.
+From 4 years of experience in quality control or software testing. Knowledge of various types of testing, such as unit testing, integration testing, system testing, and acceptance testing.
+Technical Skills:
+Understanding of software development lifecycle (SDLC) and testing concepts.
+Proficiency in using bug tracking tools (e.g., Jira) and test management tools to organize test cases, track defects, and manage test execution.
+Hands-on experience with test stacks such as Playwright, Cypress, Selenium, or Gherkin/Cucumber.
+Experience in working in cross functional or Agile teams
+Analytical Skills: Ability to analyze requirements and identify test scenarios.
+Strong problem-solving skills and attention to detail.
+Ability to write clear and comprehensive test documentation.
+English: Effective communication skills to collaborate with developers, product managers, and other stakeholders.
+Team Player: Ability to work collaboratively in a team environment.
+WHY YOU'LL LOVE WORKING HERE
+Well-trained and dedicated to being able to catch the pace smoothly
+Basic salary: It will be based on the ability of the candidate and the general salary framework set by the company.
+Salary review based on performance every 6 months if your basic salary is less than 30,000,000 VND. If your basic salary is from 30,000,000 VND, it will be reviewed every year
+13th-month salary and bonus for holidays
+Team building once a month
+Company trip: 1 time/year
+Full social benefits in accordance with the company and the law of Vietnam
+Professional environment and clear procedures.
+Great opportunity to improve English
+Opportunity to learn Logistics and professional management system of project development process
+(Please be noted that only selected candidates will be contacted via phone)
+
+6. NAVER (QA Engineer - Weebton)
+Full job description
+About NAVER Corp and NAVER Vietnam:
+
+NAVER Corp. is a global technology leader behind iconic products such as NAVER Search, LINE, NAVER WEBTOON, and more, driving innovation across AI, cloud computing, and digital content.
+
+Founded in 2021, NAVER Vietnam is a fast-growing Development Center delivering global services such as Npay, Weverse, and NAVER WORKS. Guided by Autonomy – Challenge – Teamwork, the company is recognized as Best IT Company in Vietnam (ITViec, 2023 & 2025).
+
+Vietnam Visual eXperience (VVX) focuses on next-gen media technology (e.g., CHZZK, Virtual Streamers, K-POP, Drama), combining AI, real-time rendering, and virtual production to power immersive content experiences across NAVER's global platforms.
+
+Learn more about us: https://navercorp.vn/
+
+We are seeking a highly motivated and enthusiastic Experienced QA Engineer to join our QE team - Webtoon Project.
+
+Your day-to-day:
+Support testing for Webtoon Project (a global digital comics platform that provides a wide range of webcomics to users worldwide).
+Execute and participate in all testing activities, including manual and automation tests, to improve product quality, and work closely with the team to deliver product success.
+Automate functional, regression, and/or performance testing to speed up the product delivery cycle.
+Have complete responsibility to enhance end-to-end automated test coverage.
+Participate in the review of project requirements to understand test objectives, to provide input on the testability of requirements, and to estimate the testing activities.
+Prepare detailed test reports and provide data-driven Sign-Off decisions.
+Your qualifications:
+
+4 - 6 years of experience in software quality assurance and testing.
+Experience with manual testing to make sure that the product functionalities comply with business requirements is a MUST.
+Experience in building or maintaining automation testing frameworks for Web and API automation frameworks (e.g., Puppeteer, Playwright, Selenium).
+Strong experience of at least one modern programming language, such as JavaScript, Java, Python,... with a strong base in object-oriented design and development.
+Bachelor's degree in Computer Science, IT, or a related field.
+Strong English communication skills, both written and spoken.
+It's a big plus if you:
+
+ISTQB or other relevant testing certifications.
+Experience of using AI tools (GitHub Copilot, OpenAI api, etc.) or AI-based testing platforms to optimize the QA workflow.
+Proficiency in Korean (TOPIK certification).
+From solid welfare programs to autonomy over working time and place, we create the culture in which we work. By joining NAVER VIETNAM, you will be involved in:
+Competitive rewards: Various additional bonuses based on work performance
+Continuous growth: Self development allowance and annual learning budget (Udemy, Coursera)
+AI-powered work: Access to Claude Code Enterprise — build faster, smarter, and focus on what truly matters
+Premium healthcare: Coverage for you and family members, annual check-ups
+Strong culture: Team activities, hobby clubs, and celebrations
+Modern environment: Latest equipment, great peers, supportive leaders
+Recognition & perks: Dedication bonus, referral bonus, home and office support
+…and an environment where you can grow faster, build meaningful products, and do your best work.
+
+By applying to NAVER Vietnam, the candidate confirms that all information provided is true and correct. Any false or misleading information may result in disqualification from the recruitment process or termination of employment if discovered later.
+
+By clicking "Submit Application," you agree to allow NAVER Vietnam to process your personal data in accordance with our Data Policy. This includes storing, reviewing, and sharing your information with relevant parties involved in the recruitment process.
+
+Please use a real personal photo (not an AI-generated one) throughout the recruitment process.
+
+7. Nakivo (Automation QA Engineer (QA QC/Tester/Automation Test))
+Job description
+RESPONSIBILITIES
+Collaborate with software developers and quality assurance teams to
+understand project requirements and functionality
+Design, develop, and execute automated test scripts using industry-standard
+automation tools
+Identify and report software defects in a clear and concise manner
+Work closely with cross-functional teams to analyze test results and
+troubleshoot issues
+Contribute to the continuous improvement of the automation testing process
+Design, create, and manage automation test cases using AI technologies
+Your skills and experience
+You properly are a potential candidate for this position, if you have:
+Bachelor degree in Computer Science, Engineering, or related field
+Strong understanding of software development life cycle and testing
+methodologies
+3 years of experience or more in relevant positions
+Proficient in at least one programming language (e.g., Java, Python, C#)
+Familiarity with automation testing tools such as Selenium, Appium, or similar
+Basic knowledge of version control systems (e.g., Git)
+Excellent problem-solving and analytical skills
+Strong communication and collaboration skills
+Experience with AI-automation testing (e.g., Copilot, Cursor, Perplexity)
+
+You will be a strong candidate if you have
+Experience in working with test automation frameworks (e.g. JUnit, TestNG,
+Selenium WebDriver)
+Understanding of web technologies (HTML, CSS, JavaScript)
+Knowledge of API testing and tools (e.g., Postman, RestAssured)
+Experience with performance testing concepts and tools
+Experience with VMware, Hyper-V, Aws and Cloud storage
+Hands-on experience working with AI technologies
+Given the high volume of CVs applied, we can only manage to respond to candidates whose profiles aligns with the position within 5 working days. We appreciate your understanding and enthusiastic towards our company
+Why you'll love working here
+The Nakivo team in Vietnam has been changing very fast in the recent years, we have grown from a group of 6 engineers to the current team size of 80 and we are expecting to grow even more in the next following years.
+We welcome and embrace people, regardless of their background, religion, nationality or gender, but focus on diversity, contribution, determination and work ethic. At Nakivo, we are trying to improve everyday, to become a competitive choice for talented people, by offering
+Flexible working hours: Office opens from 6.00 AM to 10.00 PM
+Private health care package
+Healthcare package for family members
+Premium health care check
+Gift (cash/voucher) for every special occasion: New Year's Eve, Tet holidays, International Women's Day, International Children's Day, Mid-Autumn Festival and Birthday
+15-18 annual leaves/year, 5 sick leaves and additional leaves (up to 3 days)
+Team building
+Free and un-limited snack, tea, coffee and by-choice request.
+8. Dentsu (QC Engineer)
+Full job description
+The QC Engineer is responsible for establishing and standardizing the complete quality assurance process for the company's Salesforce CRM systems and AI solutions. This is a foundational role that will build QC practices from the ground up, including an automation testing framework, AI testing procedures, and quality standards applied across the entire engineering team.
+Job Description:
+
+QC Process Setup
+
+Establish the company's end-to-end quality assurance process from scratch: definition of done, bug severity matrix, release checklist.
+Build and standardize an automation testing framework covering web UI, API, and Salesforce CRM flows.
+Integrate automated tests into the CI/CD pipeline to ensure every release is covered by automated checks.
+Develop a regression test suite covering all core system functionality.
+AI Systems Testing
+
+Define and implement testing procedures specific to AI systems: prompt regression testing, output quality evaluation.
+Apply AI tools to accelerate test case generation, bug detection, and test data creation.
+Monitor and alert on AI model output degradation in production environments.
+Assess accuracy, consistency, and safety of AI agents prior to go-live.
+Salesforce CRM Testing
+
+Conduct end-to-end testing of Salesforce flows, automation rules, and data integrations.
+Verify data integrity between Salesforce and external systems (Call Center, DMS, Social Platform).
+Collaborate with the Dev team from the requirements stage to identify risks early.
+Write and maintain test cases that are reproducible, clearly documented, and handover-ready.
+Reporting & Continuous Improvement
+
+Produce regular quality reports: defect rate, test coverage, aging open issues.
+Proactively propose process improvements upon identifying bottlenecks or quality risks.
+Requirements
+
+Minimum 2–3 years of QC/QA experience, including at least one end-to-end automation testing project.
+Proficient in at least one automation framework: Selenium, Playwright, Cypress, or equivalent.
+Experience with API testing tools (Postman, RestAssured, or equivalent).
+Demonstrated use of AI tools (Copilot, ChatGPT, Claude, etc.) in day-to-day QC work.
+Basic knowledge of Salesforce CRM; prior testing or usage of Salesforce in a project context.
+Ability to establish QC processes from scratch in an environment without existing standards.
+Preferred
+
+Experience testing AI systems or LLM-based applications.
+Programming ability in Python or JavaScript for writing custom automation scripts.
+Experience with performance testing tools (JMeter, k6, Locust).
+Familiarity with Agile/Scrum; experience working with Jira or equivalent.
+Salesforce Administrator certification is a strong advantage.
+Location:
+
+Ho Chi Minh City
+Brand:
+
+Merkle
+Time Type:
+
+Full time
+Contract Type:
+
+Fixed Term Contract (Fixed Term)
+
+9. Oivan (Junior QA Engineer)
+Full job description
+Top 3 reasons to join us
+Big salary and great benefits
+Flexible working hours and a hybrid working model
+International experience with travel possible
+Job description
+Oivan is seeking a Junior Quality Assurance Engineer (QA) with 3+ years of experience and other relevant technologies to join our growing Ho Chi Minh City teams.
+
+We offer the unique opportunity to work and improve your skills with a diverse and geographically distributed team of technology and business experts around the world. We have offices in Helsinki (Finland), Khon Kaen (Thailand), Bangkok (Thailand), Abu Dhabi (UAE) and Riyadh (KSA) and Vietnam.
+
+Our project team uses Scrum framework via Scrum.org certified Professional Scrum Masters.
+
+We have flexible hours and remote work options with open culture and Nordic management style. Our Nordic spirit and values drive the way we work always.
+
+Design, develop, and execute automated test scripts for web/mobile applications.
+Utilize AI assistants to generate boilerplate code, refactor test scripts, and debug complex automation issues efficiently.
+Monitor and update existing test suites to ensure they evolve alongside our product features.
+Work closely with Developers to identify high-priority test cases for automation.
+Document clear, concise bug reports and track defects through their entire lifecycle.
+
+Your skills and experience
+At least 3 years of experience in relevant roles
+Must be able to work Saudi Arabia hours (13:00 – 21:00, Sunday to Thursday)
+Good verbal and written English skills
+Good communication skills and ability to work within a team
+Automation Fundamentals: proficiency in at least one programming language (e.g., Ruby, or JavaScript)
+Strong understanding of the Software Testing Life Cycle (STLC) and bug-hunting techniques.
+Ability to translate manual test cases into logical, efficient automated scripts.
+Proven ability to use AI tools to speed up coding tasks and solve logical problems.
+Experience with Cypress or Capybara is nice to have.
+Why you'll love working here
+Oivan aims to create the best workplace in Vietnam by driving digital transformation through our Nordic values, positioning ourselves as one of the leading Finnish software companies.
+
+Benefits
+Flexible hours and hybrid work
+Macbook Pro, screen protector, mouse, and headphones
+Premium insurance for you and your family
+Company paid team lunch weekly outside
+Travel opportunity to Oivan international locations and client sites
+International team and work opportunities overseas.
+We have Scrum.org certified Professional Scrum Masters and Scrum framework used in project delivery.
+Snacks/healthy food, coffee, and drinks at the office
+Regular team social events
+Self-study time and company-sponsored opportunities for development (+2 hours per week)
+15 days annual leave
+10 days of paid paternity leave when have a baby.
+15 sick leaves
+Annual health checkup
+13th Month Salary
+
+10. Motorola Solutions (Senior AQ Automation Engineer)
+Full job description
+Company Overview
+At Motorola Solutions, we believe that everything starts with our people. We’re a global close-knit community, united by the relentless pursuit to help keep people safer everywhere. We build and connect technologies to help protect people, property and places. Our solutions foster the collaboration that’s critical for safer communities, safer schools, safer hospitals, safer businesses, and ultimately, safer nations. Connect with a career that matters, and help us build a safer future.
+
+
+Department Overview
+Motorola Solution’s Video Division is defining the future of the security industry through innovative end-to-end-solutions. We’re changing the landscape of the surveillance industry through advanced award-winning AI based surveillance systems. Artificial Intelligence is transforming the world and our team is advancing the field as it applies to the surveillance industry. We are proud to be industry leaders in video analytics with products like Appearance Search and Unusual Motion Detection along with our recently launched cloud service platform.
+
+Job Description
+As a Senior/ Quality Assurance Automation Engineer in our camera systems group, you will play a crucial role in technically leading, designing, developing, and optimizing automated test solutions for intelligent embedded camera systems and user interfaces and evaluating Computer Vision and AI algorithms . You will be responsible for the full lifecycle of test automation development, from conceptualization to deployment, while also contributing to backend API test design and implementation. This position requires a deep understanding of modern UI frameworks, strong full-stack test automation principles, and experience with camera technologies or similar data-intensive applications.
+
+Job Description:
+
+We are seeking a highly skilled and detail-oriented Quality Assurance Automation Engineer who can lead our Vietnam embedded automation efforts.
+
+The ideal candidate is passionate about leading successful deployments of commercial systems for the benefit of our customers.
+
+The Quality Assurance Automation Engineer will be responsible for guiding the development, and hands-on participation in the quality assurance activities for our Embedded AI platform that is the core intelligence of our security surveillance cameras, appliances, and cloud services. This engineer will help drive our releases, ensure smooth and timely deployment of new features and bug fixes, and work with a team of quality engineers to maintain the test automation framework and overall product quality.
+
+This individual will collaborate with cross-functional teams, including software and firmware engineers, quality testers, automation test engineers, product managers, and field support technicians, to ensure successful software releases that meet Motorola Solutions quality standards and customer expectations.
+
+Key Responsibilities:
+
+Collaborate with a small team of Quality assurance engineers and Quality technicians.
+
+Ensure that the Motorola Solutions Embedded AI group produces the highest quality, smartest, easiest to use products in the surveillance industry.
+
+Help lead the design & implementation of a quality evaluation pipeline, workflows, and reporting service for automatically testing IoT devices code prior to release.
+
+Contribute to a comprehensive quality assurance strategy to ensure the reliability and performance of our edge-based video surveillance cameras and cloud-based services.
+
+Execute quality assurance testing strategies for OTA firmware releases for cameras and appliances
+
+Work with the quality team to develop an exhaustive test approach, including pass fail metrics, real and synthetic video datasets, and automation as part of a comprehensive test suite for each new feature.
+
+Collaborate with product management, embedded software developers, algorithm developers, data scientists, and user interface engineers to define system requirements and use-cases for each new analytics feature.
+
+Coordinate with software development teams to define release scope, objectives, and timelines.
+
+Develop and maintain quality metrics, reports, and documentation to track and communicate product quality improvements.
+
+Analyze test results, identify trends, and provide recommendations for process improvements.
+
+Stay up-to-date with industry best practices and emerging technologies related to quality assurance and AI-based video surveillance systems.
+
+Support our cross-team software escalation process, ensuring timely resolution of critical quality issues and effective communication with stakeholders.
+
+Identify and close testing holes in current test processes and automation
+
+Create and execute test plans, test cases, and test scripts for both manual and automated testing.
+
+Conduct off-site outdoor field testing of analytics features on camera hardware
+
+#LI-MM8
+
+#LI-onsite
+
+Basic Requirements
+Bachelor of Science degree in Electrical Engineering, Computer Engineering, Computer Science, Robotics, Physics, or equivalent experience from a technical engineering discipline.
+
+Experience leading a small team, evaluating performance and managing direct reports successfully.
+
+1 to 7+ years of experience in quality assurance automation engineering.
+
+Proven experience in designing, implementing, and managing comprehensive quality assurance strategies and automation frameworks for complex software and hardware systems.
+
+Expertise in developing and authoring Python, C++, and Javascript automation software to test individual software components, web-enabled embedded hardware, IoT, and/or Robotics.
+
+Strong background in cloud-connected applications with platforms such as AWS, Azure, and Google Cloud, and integrating automated tests within CI/CD pipelines.
+
+Demonstrated ability to mentor young developers, fostering a culture of quality, innovation, and continuous improvement.
+
+Excellent communication, collaboration, and interpersonal skills, with the ability to effectively engage with technical and non-technical stakeholders across all levels of the organization.
+
+Experience with AI, machine learning, and computer vision technologies, and their application in quality assurance.
+
+Ability to troubleshoot complex technical issues, think critically, and drive timely resolution of critical quality issues.
+
+Highly organized, creative, and curious, with the ability to multi-task and thrive in an autonomous, empowering, and exciting environment.
+
+
+Travel Requirements
+Under 10%
+
+Relocation Provided
+None
+
+Position Type
+Experienced
+Referral Payment Plan
+No
+EEO Statement
+
+Motorola Solutions is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion or belief, sex, sexual orientation, gender identity, national origin, disability, veteran status or any other legally-protected characteristic.
+
+We are proud of our people-first and community-focused culture, empowering every Motorolan to be their most authentic self and to do their best work to deliver on the promise of a safer world. If you’d like to join our team but feel that you don’t quite meet all of the preferred skills, we’d still love to hear why you think you’d be a great addition to our team.
+
+
+

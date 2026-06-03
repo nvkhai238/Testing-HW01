@@ -1,0 +1,66 @@
+Here is a detailed mindmap of the **ISTQB Fundamental Test Process** (based on the latest ISTQB Foundation Level syllabus). It is structured using Markdown indented lists so you can easily copy and paste it into mind-mapping tools like XMind, Markdown editors (like Obsidian/Notion), or Mermaid.js generators.
+
+### Mindmap: ISTQB Fundamental Test Process
+
+* **ISTQB Fundamental Test Process**
+* **1. Test Planning**
+* Defining the objectives of testing (e.g., finding defects, building confidence, preventing defects).
+* Determining the scope and risks of the test effort.
+* Defining the overall test approach (strategies, techniques, environments).
+* Scheduling test activities (analysis, design, implementation, execution, completion).
+* Assigning resources (people, tools, environments).
+* Selecting metrics for monitoring and controlling the test process.
+
+
+* **2. Test Monitoring and Control**
+* **Test Monitoring**
+* Continuously checking actual progress against the test plan.
+* Measuring and reporting test metrics (e.g., test cases passed/failed, defect density).
+
+
+* **Test Control**
+* Taking corrective actions when test progress deviates from the plan.
+* Re-evaluating test coverage and adjusting the schedule or resources if necessary.
+* Providing regular Test Progress Reports to stakeholders.
+
+
+
+
+* **3. Test Analysis** *(Answering: "What to test?")*
+* Analyzing the test basis (requirements, design specifications, architecture, user stories).
+* Evaluating the test basis to identify ambiguities, contradictions, or missing details (early defect detection).
+* Identifying features and sets of features to be tested.
+* Defining and prioritizing test conditions based on analysis.
+
+
+* **4. Test Design** *(Answering: "How to test?")*
+* Deriving and prioritizing test cases from the identified test conditions.
+* Designing test data required to support the test cases.
+* Designing the test environment and identifying required infrastructure/tools.
+* Establishing bidirectional traceability between the test basis, test conditions, and test cases.
+
+
+* **5. Test Implementation** *(Answering: "Is everything ready to run?")*
+* Developing and prioritizing test procedures and automated test scripts.
+* Grouping test procedures into test suites.
+* Creating the test execution schedule to maximize efficiency (e.g., running highest priority tests first).
+* Building, verifying, and setting up the test environment and test data.
+
+
+* **6. Test Execution**
+* Running test suites according to the execution schedule (manual or automated).
+* Logging the outcome of test execution (Pass, Fail, Blocked, Skipped).
+* Comparing actual results against expected results.
+* Analyzing anomalies to establish their likely cause.
+* Logging defects based on test failures.
+* Retesting (Confirmation Testing) to verify if fixes resolved the defects.
+* Regression testing to ensure no unintended side effects occurred.
+
+
+* **7. Test Completion**
+* Evaluating if the exit criteria (defined in Test Planning) have been met.
+* Checking whether all defect reports are closed, deferred, or accepted by the product owner.
+* Creating a comprehensive Test Summary Report for stakeholders.
+* Handing over testware (test scripts, test data, environments) to maintenance or future project teams.
+* Archiving testware for future reuse.
+* Conducting a retrospective (lessons learned) to improve future test processes.
