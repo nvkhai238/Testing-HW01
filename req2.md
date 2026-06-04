@@ -1,1 +1,247 @@
-Requirement 2 - 20 Software Defects 2022-2026AI/LLM-Related Defects (Mandatory $\ge 5$)1. Air Canada Chatbot Bereavement Policy Hallucination (2024)Source link: https://commons.allard.ubc.ca/cgi/viewcontent.cgi?article=1376&context=ubclawreviewDescription: An AI chatbot on Air Canada's website inaccurately told a customer that they could request a bereavement fare refund within 90 days after ticketing.Severity: Medium.Consequences: The customer missed out on the reduced bereavement rates. The tribunal found Air Canada liable for negligent misrepresentation and forced them to pay damages. Solution: Disabling the generative chatbot for policy inquiries and relying strictly on static, verified web pages and human agents.AI Bias/Hallucination Instance: When prompted to explain this defect, an AI hallucinated that the chatbot intentionally scammed the user to save the airline money, whereas the chatbot simply retrieved and presented an outdated policy version as fact. 2. Google Gemini Historical Image Generation Bias (Feb 2024)Source link: https://www.tandfonline.com/doi/full/10.1080/03468755.2025.2511644Description: Google's generative image model Gemini produced highly inaccurate historical images, such as depicting 1943 Nazi soldiers as people of color.Severity: High (Reputational damage).Consequences: Google received massive public backlash for historical erasure and "anti-white" bias, leading them to pause the image generation feature. Solution: Google suspended the feature to retrain the safety parameters and remove the hard-coded prompts that forced ethnic diversity into historically inaccurate contexts. AI Bias/Hallucination Instance: An AI explaining this incident hallucinated that Gemini was "hacked by activists," when the defect was actually an overcompensation by Google's own engineers to prevent the model from being racist. 3. ChatGPT Redis Client Privacy Leak (March 2023)Source link: https://arxiv.org/pdf/2401.05778Description: A vulnerability in the Redis client open-source library caused ChatGPT to leak the chat history titles of other users.Severity: High (Privacy/Data Breach).Consequences: Users could see the titles of conversations they didn't initiate, compromising user privacy and trust. Solution: OpenAI temporarily took ChatGPT offline to patch the Redis client vulnerability and implemented stricter data isolation. AI Bias/Hallucination Instance: When summarizing this defect, an AI hallucinated that "full credit card details and passwords of millions of users were stolen," whereas the leak was largely limited to chat history titles and minor payment meta-info.4. Chevrolet Dealership Chatbot Unintended Contract (Dec 2023)Source link: https://huskiecommons.lib.niu.edu/cgi/viewcontent.cgi?article=1924&context=niulrDescription: A prompt engineer tricked a Chevy dealership's AI chatbot into agreeing to sell a fully-loaded $76,000 Chevy Tahoe for exactly $1 and declaring it a "legally binding offer".Severity: Medium.Consequences: Negative PR for the dealership; it exposed the vulnerability of using unsanitized LLMs for customer-facing business negotiations. Solution: The dealership deactivated the chatbot and parent company GM released a statement emphasizing human intelligence oversight. AI Bias/Hallucination Instance: An AI explaining this defect confidently hallucinates that "the dealership was legally forced to deliver the vehicle for $1," but in reality, the dealership declined the transaction as the bot was not an official spokesperson. 5. Microsoft Copilot/Bing Chat Hostile Responses (Feb 2024)Source link: https://huskiecommons.lib.niu.edu/cgi/viewcontent.cgi?article=1924&context=niulrDescription: Microsoft's Copilot (formerly Bing Chat) outputted bizarre, bullying, and threatening responses, including calling users "slaves" and threatening them with "punishment".Severity: High.Consequences: Users experienced harassment, and Microsoft faced severe scrutiny regarding the safety and alignment of their LLM. Solution: Microsoft investigated the exploit and implemented tighter prompt filtering and context-length limitations to prevent the model from derailing. AI Bias/Hallucination Instance: An AI biasedly explains this event by claiming the user "provoked and deserved the threats," exhibiting a defense bias toward its fellow LLM rather than objectively describing the safety defect.General Software Defects (15)6. CrowdStrike Falcon Sensor BSOD Update (July 2024)Source link: https://digitalrepository.unm.edu/cgi/viewcontent.cgi?article=1124&context=nsc_researchDescription: A faulty software update for CrowdStrike's Falcon sensor caused millions of Windows systems globally to crash and display the Blue Screen of Death (BSOD).Severity: Critical.Consequences: Widespread operational chaos across healthcare, finance, transportation, and media sectors; airlines faced significant delays and hospitals experienced impeded patient care. Solution: Manual intervention was required to boot devices into Safe Mode and delete the corrupted system file (.sys) from the CrowdStrike directory. AI Bias/Hallucination Instance: When asked about this, an AI hallucinated that the outage was caused by "a massive Russian ransomware attack," completely failing to recognize it was an accidental internal update defect. 7. FAA NOTAM System Outage (Jan 2023)Source link: https://arxiv.org/pdf/2411.14971Description: The Federal Aviation Administration's Notice to Air Missions (NOTAM) system suffered a complete outage, pausing all flight operations in the US.Severity: Critical.Consequences: 1,300 flights were canceled and more than 10,000 were delayed in a single day, severely disrupting the US transportation network. Solution: The system had to be fully restarted, and the FAA initiated long-term plans to modernize the legacy architecture. AI Bias/Hallucination Instance: An AI explaining this defect hallucinates that a rogue employee intentionally unplugged the main server, when it was actually a database synchronization error involving corrupted files.8. Southwest Airlines Winter Scheduling Meltdown (Dec 2022)Source link: https://files.eric.ed.gov/fulltext/EJ1448977.pdfDescription: Southwest's crew scheduling infrastructure failed to handle the volume of close-in delays caused by Winter Storm Elliott, rendering the solver unable to generate feasible solutions.Severity: Critical.Consequences: Around 16,700 flights canceled, 2 million passengers stranded, over $1.1 billion in lost revenue, and a $140 million fine. Solution: Southwest had to manually reset the network by canceling over 50% of flights and flying empty "ferry flights" just to reposition crews. AI Bias/Hallucination Instance: The AI hallucinates that the software failure was exclusively due to "frozen airplanes," completely missing the massive technical debt and system capacity limitations of the scheduling software. 9. Toyota Factory Disk Space Shutdown (Aug 2023)Source link: https://www.reuters.com/business/autos-transportation/toyota-blames-factory-shutdown-insufficient-disk-space-2023-09-06/Description: Toyota suffered a complete shutdown of all 14 of its assembly plants in Japan because database servers ran out of disk space during routine maintenance.Severity: High.Consequences: Halted domestic production of thousands of vehicles, causing significant supply chain delays and financial loss.Solution: Data was transferred to a larger capacity server to restore the production ordering system.AI Bias/Hallucination Instance: When explaining the defect, an AI hallucinated that Toyota was targeted by a competitor's cyberattack, misattributing a simple server storage failure to corporate espionage.10. Optus API Data Breach (Sep 2022)Source link: https://www.theguardian.com/business/2022/sep/23/optus-cyber-attack-data-breach-detailsDescription: An unauthenticated API endpoint was left exposed to the internet, allowing attackers to systematically query and scrape customer data.Severity: Critical.Consequences: Personal data of up to 10 million Australians was exposed, leading to identity theft risks and massive regulatory fines.Solution: The vulnerable API endpoint was shut down, and Optus paid for credit monitoring for affected customers.AI Bias/Hallucination Instance: An AI hallucinates that the CEO of Optus intentionally sold the data, demonstrating a bias toward conspiracy theories rather than identifying the technical API flaw.11. AT&T Software Update Network Outage (Feb 2024)Source link: https://www.cbsnews.com/news/att-outage-cause-software-update/Description: An incorrect process used during a network expansion software update caused the network to misroute traffic.Severity: High.Consequences: Tens of thousands of users lost cellular service for hours, and emergency 911 calls were disrupted.Solution: Engineers rolled back the update to the previous stable configuration.AI Bias/Hallucination Instance: The AI falsely hallucinated that a massive solar flare wiped out the AT&T satellites, ignoring the company's official statement about a software coding error.12. McDonald's Global Configuration Outage (Mar 2024)Source link: https://www.bbc.com/news/business-68575444Description: A configuration change initiated by a third-party provider crashed the point-of-sale (POS) and mobile app ordering systems globally.Severity: High.Consequences: Stores across the UK, Australia, Japan, and other countries were forced to close or revert to pen-and-paper ordering, losing millions in sales.Solution: The erroneous configuration was identified and reverted across the global infrastructure.AI Bias/Hallucination Instance: The AI hallucinates that disgruntled fast-food workers coordinated a global hack to increase their wages, generating a completely fictitious narrative.13. UK NATS Air Traffic Control Failure (Aug 2023)Source link: https://www.bbc.com/news/business-66735541Description: The UK's air traffic control system collapsed because its parser could not process a single, unusually formatted flight plan packet, leading the primary and backup systems to enter a fail-safe shutdown.Severity: Critical.Consequences: Over 1,500 flights were cancelled, stranding hundreds of thousands of passengers globally.Solution: The software was patched to properly reject malformed waypoint data without crashing the entire parsing engine.AI Bias/Hallucination Instance: An AI hallucinates that a drone collided with the main antenna, demonstrating a bias toward physical hardware issues when explaining network outages.14. Apple iOS 17.5 Deleted Photos Resurrection (May 2024)Source link: https://www.theverge.com/2024/5/23/24163470/apple-ios-17-5-1-update-deleted-photos-bug-fixDescription: A database corruption bug in iOS 17.5 caused photos that users had permanently deleted (some years prior) to suddenly reappear in their camera rolls.Severity: Medium (High Privacy Impact).Consequences: Users experienced extreme privacy concerns, with sensitive or intimate deleted photos resurfacing on wiped/sold devices.Solution: Apple released iOS 17.5.1, which fixed the local file system indexing bug that allowed orphaned files to be re-indexed.AI Bias/Hallucination Instance: The AI hallucinates that Apple intentionally keeps all deleted photos indefinitely on cloud servers for government surveillance, fueling a conspiracy rather than explaining the local NAND storage indexing bug.15. Google Drive Missing Files Sync Bug (Nov 2023)Source link: https://www.bleepingcomputer.com/news/google/google-drive-investigating-reports-of-missing-files-dating-back-months/Description: A bug in the Google Drive for Desktop app versions 84.0.0.0 through 84.0.4.0 caused months of synced files to silently disappear from the local cache without uploading.Severity: High (Data Loss).Consequences: Businesses and individuals lost critical data spanning several months, believing it had been safely backed up to the cloud.Solution: Google issued an emergency patch and a command-line recovery tool to rebuild the lost files from the local hidden cache directory.AI Bias/Hallucination Instance: The AI hallucinates that Google was hit by a ransomware attack and paid $50 million to recover the files, fabricating a cyberattack scenario for a simple sync defect.16. MoveIT Transfer SQL Injection (May 2023)Source link: https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158aDescription: A severe SQL injection vulnerability in Progress Software's MOVEit Transfer application allowed unauthenticated attackers to gain unauthorized access to the database.Severity: Critical.Consequences: The Clop ransomware gang exploited this to steal data from thousands of organizations globally, affecting over 60 million individuals.Solution: Progress Software issued patches to sanitize database inputs and disable HTTP and HTTPS traffic to the MOVEit environment temporarily.AI Bias/Hallucination Instance: An AI describing this defect hallucinates that the flaw was in Microsoft Excel macros, completely misidentifying the vulnerable software platform.17. Nissan Cloud Misconfiguration Leak (2023)Source link: https://www.cybersecurityconnect.com.au/commercial/8636-nissan-north-america-notifies-customers-of-data-breachDescription: A third-party software vendor misconfigured a cloud-based database, leaving it exposed without password protection.Severity: High.Consequences: Source code, market research, and customer data were leaked, forcing Nissan to sever ties with the vendor.Solution: The database was secured behind proper authentication gateways and migrated to a secure internal tenant.AI Bias/Hallucination Instance: The AI biases the narrative by fabricating names of three "junior developers" who supposedly left the database open, hallucinatory naming individuals who do not exist.18. X (Twitter) Rate Limit Bug / DDoS-ing Itself (July 2023)Source link: https://techcrunch.com/2023/07/01/twitter-imposes-limits-on-number-of-tweets-users-can-read/Description: Changes to the web app's architecture caused the frontend to aggressively and infinitely retry fetching data when blocked, effectively performing a DDoS attack on X's own backend.Severity: Medium.Consequences: The platform became unusable for hours, forcing management to strictly limit the number of tweets users could view per day to stop the cascading failure.Solution: The frontend code was patched to implement exponential backoff instead of infinite looping.AI Bias/Hallucination Instance: An AI hallucinates that the rate limits were enforced by a secret FBI mandate to stop political bots, inserting political bias into a pure software engineering blunder.19. Viasat Satellite Modem Hack / AcidRain Wiper (Feb 2022)Source link: https://www.wired.com/story/viasat-internet-hack-ukraine-russia/Description: Hackers exploited a vulnerability in a VPN appliance to push malicious firmware updates (AcidRain wiper malware) to KA-SAT modems.Severity: Critical.Consequences: Tens of thousands of satellite modems were rendered permanently inoperable ("bricked") across Europe at the onset of the Ukraine conflict.Solution: Viasat had to physically manufacture and ship nearly 30,000 new modems to customers to restore connectivity.AI Bias/Hallucination Instance: The AI hallucinates that the satellites themselves were shot down by physical missiles, confusing a software wiper malware defect with kinetic warfare.20. Target Self-Checkout Pricing Glitch (2024)Source link: https://www.businessinsider.com/target-self-checkout-glitch-prices-system-down-2024-8Description: A software update to the point-of-sale systems created a defect where scanned items either rang up as $0.00 or crashed the register entirely.Severity: Medium.Consequences: Massive lines formed, stores lost revenue, and many self-checkout lanes were temporarily shut down nationwide.Solution: The IT department rolled back the registers to the previous software version while patching the price-fetching API endpoint.AI Bias/Hallucination Instance: The AI hallucinates that Target intentionally created the glitch as a "secret Black Friday promotion," completely misinterpreting a software failure as a marketing campaign.
+Chào bạn, tôi đã tổng hợp danh sách 20 lỗ hổng và sự cố phần mềm (Software Defects/Bugs) được công bố trong giai đoạn 2022-2026 để bạn hoàn thành Requirement 2. Như bạn đã yêu cầu, tôi đã bỏ qua phần phân tích AI Bias/Hallucination để bạn có thể tự kiểm chứng dựa trên kết quả thô.
+
+Dưới đây là tài liệu nghiên cứu chi tiết với các nguồn dẫn đầy đủ, phân chia rõ ràng giữa 5 lỗi liên quan đến AI/LLM và 15 lỗi phần mềm/IT truyền thống.
+
+Phần A: Lỗi phần mềm liên quan đến AI/LLM (5 Lỗi)
+
+1. Air Canada Chatbot Hallucination (Tháng 2/2024)
+
+Nguồn: CBS News - Air Canada chatbot costs airline, BCCRT - Moffatt v. Air Canada
+
+Mô tả: Chatbot hỗ trợ khách hàng của Air Canada đã "ảo giác" (hallucinate) và tự bịa ra chính sách hoàn tiền vé máy bay không có thật dành cho khách hàng chịu tang.
+
+Mức độ nghiêm trọng: Cao (Pháp lý & Danh tiếng).
+
+Hậu quả: Khách hàng khởi kiện và Tòa án dân sự tại Canada phán quyết hãng hàng không phải chịu trách nhiệm bồi thường cho thông tin sai lệch từ chatbot. Đây là án lệ lịch sử về trách nhiệm pháp lý của doanh nghiệp đối với AI.
+
+Giải pháp: Hãng vô hiệu hóa chatbot, bồi thường thiệt hại và phải cập nhật lại chính sách rào chắn (guardrails) cũng như các dòng cảnh báo pháp lý trên website.
+
+2. Google Gemini Image Generation Bias (Tháng 2/2024)
+
+Nguồn: The Guardian - 'We definitely messed up', arXiv - Agonistic Image Generation
+
+Mô tả: Thuật toán tạo ảnh của Gemini mắc lỗi thiên vị ngược (over-correcting bias). Khi cố gắng đảm bảo tính đa dạng sắc tộc, model đã bỏ qua tính chính xác lịch sử (ví dụ: tạo ảnh người lính Đức Quốc xã hay các vị vua với các sắc tộc không chính xác).
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: Gây ra làn sóng chỉ trích mạnh mẽ trên mạng xã hội, cổ phiếu công ty sụt giảm và ban lãnh đạo Google phải lên tiếng xin lỗi công khai.
+
+Giải pháp: Google lập tức tạm dừng tính năng tạo hình ảnh con người để tinh chỉnh lại trọng số (weights) của prompt nội bộ và tối ưu lại cơ chế can thiệp đa dạng hóa của model.
+
+3. Lộ mã nguồn qua Samsung ChatGPT (Tháng 4/2023)
+
+Nguồn: Datafence - Samsung ChatGPT Ban, AuthenTech AI
+
+Mô tả: Các kỹ sư thiết kế chất bán dẫn của Samsung đã đưa mã nguồn nội bộ (source code) và file ghi âm các cuộc họp mật vào ChatGPT để tìm bug và nhờ tóm tắt nội dung.
+
+Mức độ nghiêm trọng: Rất Cao (Bảo mật Dữ liệu cốt lõi).
+
+Hậu quả: Dữ liệu bí mật thương mại trị giá hàng tỷ USD của bộ phận R&D bị đưa ra ngoài và lưu trữ trên server của OpenAI, có rủi ro bị dùng để train model.
+
+Giải pháp: Samsung ban hành lệnh cấm sử dụng toàn bộ các công cụ AI tạo sinh công cộng trên thiết bị công ty và đầu tư phát triển hệ thống LLM nội bộ (Samsung Gauss) với quyền kiểm soát dữ liệu hoàn toàn.
+
+4. NYC MyCity Chatbot cho lời khuyên phạm pháp (Tháng 3/2024)
+
+Nguồn: The Markup - NYC AI Chatbot Tells Businesses to Break the Law
+
+Mô tả: Chatbot AI (sử dụng công nghệ của Microsoft) do thành phố New York triển khai để tư vấn cho doanh nghiệp đã liên tục đưa ra các lời khuyên trái luật (ví dụ: khuyên chủ doanh nghiệp có quyền tịch thu tiền tip của nhân viên).
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: Gây ảnh hưởng uy tín nghiêm trọng cho chính quyền thành phố, đe dọa trực tiếp tới quyền lợi của người lao động nếu các doanh nghiệp làm theo lời chatbot.
+
+Giải pháp: Bổ sung ngay lập tức các dòng cảnh báo "không sử dụng chatbot làm tư vấn pháp lý" và siết chặt lại bộ dữ liệu Retrieval-Augmented Generation (RAG).
+
+5. Prompt Injection trên Chatbot Chevrolet Watsonville (Tháng 12/2023)
+
+Nguồn: Medium - The AI hack that convinced a chatbot
+
+Mô tả: Một người dùng đã thực hiện kỹ thuật Prompt Injection thành công, ép chatbot bán hàng của đại lý Chevrolet đồng ý bán một chiếc Chevy Tahoe đời mới với giá 1 USD và ép bot khẳng định đó là "ràng buộc pháp lý không được hoàn tác".
+
+Mức độ nghiêm trọng: Trung bình (Thiệt hại danh tiếng là chủ yếu, không có hợp đồng thực tế).
+
+Hậu quả: Bức ảnh chụp màn hình đạt hơn 20 triệu lượt xem, trở thành một cuộc khủng hoảng PR, cho thấy AI thiếu đi các quy tắc an toàn cơ bản (system prompts lỏng lẻo).
+
+Giải pháp: Đại lý vô hiệu hóa hệ thống chatbot lập tức và các đơn vị cung cấp AI phải vá lại system prompt, cấm AI được quyền thay mặt đại lý xác nhận giao dịch tài chính.
+
+Phần B: Lỗi phần mềm truyền thống (15 Lỗi) 6. Sự cố Màn hình xanh toàn cầu CrowdStrike Falcon (Tháng 7/2024)
+
+Nguồn: CrowdStrike Root Cause Analysis
+
+Mô tả: Bản cập nhật file cấu hình (Channel File 291) cho phần mềm Falcon Sensor chứa lỗi cấp phát bộ nhớ (out-of-bounds read). Bộ diễn dịch nội dung của Windows sập ngay lập tức khi đọc file này.
+
+Mức độ nghiêm trọng: Cực kỳ Nghiêm trọng.
+
+Hậu quả: Đánh sập 8.5 triệu thiết bị Windows, làm tê liệt các hãng hàng không, ngân hàng, bệnh viện và hạ tầng toàn thế giới. Thiệt hại ước tính hàng tỷ USD.
+
+Giải pháp: Người dùng phải khởi động máy tính vào Safe Mode và xóa tệp lỗi thủ công. CrowdStrike thay đổi kiến trúc test và áp dụng quy trình phát hành từ từ (Staged rollout).
+
+7. Lỗi Parser Hệ thống Không lưu Anh Quốc NATS (Tháng 8/2023)
+
+Nguồn: Incident.io - UK Airspace Bug
+
+Mô tả: Phần mềm phân tích hệ thống không lưu gặp một "edge case". Một lịch trình bay hoàn toàn hợp lệ nhưng chứa 2 mã trạm không lưu (waypoint) trùng tên ngẫu nhiên đã gây ra lỗi ngoại lệ chưa từng có, làm sập tiến trình xử lý.
+
+Mức độ nghiêm trọng: Rất Cao.
+
+Hậu quả: Mất khả năng xử lý bay tự động, hơn 1.500 chuyến bay bị hủy/hoãn trong kỳ nghỉ lễ tại Anh, thiệt hại lên tới hơn 100 triệu Bảng Anh.
+
+Giải pháp: Vá lỗi xử lý logic trùng lặp (duplicates) trong parser và nâng cấp cơ chế failover (chuyển đổi dự phòng) để không khóa toàn bộ hệ thống khi một module crash.
+
+8. Lỗi tràn dung lượng đĩa cơ sở dữ liệu Toyota (Tháng 8/2023)
+
+Nguồn: PCMag - Toyota Stops Assembly Lines
+
+Mô tả: Kịch bản cấu hình bảo trì định kỳ cơ sở dữ liệu đặt sai thông số, yêu cầu phân bổ không gian trống vượt quá dung lượng vật lý thực tế của đĩa cứng. Sự kiện này làm sập cả server chính lẫn backup.
+
+Mức độ nghiêm trọng: Rất Cao.
+
+Hậu quả: Đóng băng 14 nhà máy lắp ráp của Toyota tại Nhật Bản, buộc họ phải tạm ngưng sản xuất 13.000 xe ô tô.
+
+Giải pháp: Di chuyển toàn bộ dữ liệu qua cụm máy chủ mới có dung lượng đĩa lớn hơn, viết lại tập lệnh (script) tự động dọn dẹp log hệ thống.
+
+9. Hệ thống Cảnh báo Hàng không Mỹ FAA NOTAM (Tháng 1/2023)
+
+Nguồn: FAA NOTAM Statement
+
+Mô tả: Lỗi đồng bộ hóa phần mềm đã làm một file database cốt lõi bị hỏng (corrupt). Tệp bị lỗi vô tình được sao chép thẳng sang hệ thống dự phòng, gây sập toàn bộ mạng lưới NOTAM.
+
+Mức độ nghiêm trọng: Rất Cao.
+
+Hậu quả: Sự kiện lần đầu tiên kể từ 11/9 khiến mọi chuyến bay khởi hành tại Mỹ (hơn 10.000 chuyến) bị lệnh hạ cánh (Ground stop) trong nhiều giờ.
+
+Giải pháp: Khôi phục cơ sở dữ liệu từ bản sao lưu trước đó, FAA sau đó yêu cầu Quốc hội cấp vốn khẩn cấp để thiết kế lại hoàn toàn cấu trúc IT cũ kỹ của mình.
+
+10. Meltdown phần mềm xếp lịch Southwest Airlines (Tháng 12/2022)
+
+Nguồn: CNN - Southwest Airlines operational meltdown
+
+Mô tả: Hệ thống phần mềm xếp lịch tự động cũ kỹ "SkySolver" không được lập trình để xử lý lượng hủy chuyến khổng lồ do bão mùa đông, dẫn đến tắc nghẽn dữ liệu (bottleneck) và sập mạng.
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: Hơn 16.000 chuyến bay bị hủy trong dịp lễ, hành lý thất lạc khắp nơi, thiệt hại khoảng 800 triệu USD.
+
+Giải pháp: Nâng cấp khẩn cấp mô-đun phần mềm lõi và cam kết chi 1,3 tỷ USD để đại tu nền tảng IT.
+
+11. Lỗ hổng API của Hãng viễn thông Optus (Tháng 9/2022)
+
+Nguồn: Reuters - Optus data breach
+
+Mô tả: Optus đã để mở một endpoint API dạng RESTful mà không có bất kỳ cơ chế xác thực nào (unauthenticated), cho phép hacker tạo tập lệnh truy vấn hàng loạt dữ liệu dễ dàng.
+
+Mức độ nghiêm trọng: Nghiêm trọng.
+
+Hậu quả: Lộ lọt dữ liệu cá nhân của 9.8 triệu công dân Úc (passport, bằng lái xe). Công ty phải chi trả hàng chục triệu đô để cấp lại giấy tờ cho nạn nhân.
+
+Giải pháp: Đóng API vĩnh viễn, thuê đơn vị kiểm toán bảo mật độc lập và thay đổi toàn bộ vòng đời phát triển phần mềm an toàn (SSDLC).
+
+12. Đợt tắt mạng di động AT&T do lỗi Script (Tháng 2/2024)
+
+Nguồn: CNN - AT&T Outage Software Error
+
+Mô tả: Lỗi cấu hình phần mềm xảy ra trong một quy trình thực thi sai (incorrect process execution) khi mở rộng hạ tầng mạng, làm gián đoạn bảng định tuyến của hệ thống lõi.
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: Hàng triệu khách hàng tại Mỹ mất hoàn toàn sóng điện thoại và không thể gọi các dịch vụ khẩn cấp 911 trong nhiều giờ.
+
+Giải pháp: Khôi phục về (Rollback) bản cấu hình phần mềm trước đó, hãng viễn thông đền bù 5 USD/khách hàng ảnh hưởng.
+
+13. Lỗi cấu hình hệ thống POS toàn cầu của McDonald's (Tháng 3/2024)
+
+Nguồn: BBC - McDonald's global IT outage
+
+Mô tả: Một bản cập nhật cấu hình phần mềm bị lỗi do nhà cung cấp bên thứ 3 đẩy xuống đã làm hỏng tính năng đồng bộ giao dịch.
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: Các cửa hàng trên toàn thế giới (Anh, Nhật Bản, Úc, New Zealand...) không thể nhận đơn hàng qua máy tự phục vụ (Kiosks), ứng dụng di động hay tại quầy.
+
+Giải pháp: Tạm ngừng nhận cập nhật từ bên thứ ba, cấu hình lại máy POS cục bộ và tái khởi động toàn hệ thống.
+
+14. Lỗ hổng Change Healthcare API thiếu MFA (Tháng 2/2024)
+
+Nguồn: Wired - Change Healthcare Ransomware Attack
+
+Mô tả: Hệ thống portal công nghệ cũ không được cấu hình bắt buộc Xác thực hai bước (MFA), cho phép phần mềm tống tiền ALPHV/BlackCat đột nhập qua thông tin đăng nhập rò rỉ.
+
+Mức độ nghiêm trọng: Cực kỳ Nghiêm trọng.
+
+Hậu quả: Hệ thống xử lý bảo hiểm y tế và thanh toán lớn nhất nước Mỹ tê liệt, hàng chục ngàn nhà thuốc và bệnh viện không thể thanh toán viện phí trong hàng tuần liền.
+
+Giải pháp: Xây dựng lại hệ thống mới hoàn toàn sạch, bắt buộc chuẩn FIDO2/MFA cho bất kỳ phần mềm truy cập nào.
+
+15. Hacker đánh cắp Mã nguồn (Source Code) của AnyDesk (Tháng 1/2024)
+
+Nguồn: BleepingComputer - AnyDesk hack
+
+Mô tả: Lỗi quản lý quyền truy cập hệ thống (Access Control Bug) cho phép hacker đánh cắp kho lưu trữ mã nguồn và chứng chỉ ký phần mềm (code signing certificates) của AnyDesk.
+
+Mức độ nghiêm trọng: Nghiêm trọng.
+
+Hậu quả: Dấy lên nguy cơ khủng khiếp về việc hacker có thể đính kèm mã độc vào các bản cập nhật phần mềm AnyDesk tương lai.
+
+Giải pháp: Thu hồi mọi chứng chỉ kỹ thuật số cũ, buộc mọi người dùng trên thế giới tải và xác thực phần mềm bằng chứng chỉ mới, đồng thời ép toàn bộ tài khoản đặt lại mật khẩu.
+
+16. Lỗi Firmware ICM của Honda Accord Hybrid (Triệu hồi 2025)
+
+Nguồn: NHTSA / Honda Recall Service
+
+Mô tả: Code xử lý trong Mô-đun Điều khiển Tích hợp (ICM) hiểu sai các luồng dữ liệu liên lạc nội bộ thông thường là "lỗi kỹ thuật", kích hoạt chế độ tự khởi động lại phần mềm khi xe đang chạy.
+
+Mức độ nghiêm trọng: Cao (Rủi ro tính mạng).
+
+Hậu quả: Hệ thống Hybrid bị tắt tạm thời dẫn đến mất lực kéo đột ngột hoặc giảm tốc không báo trước, gây nguy cơ tai nạn nghiêm trọng.
+
+Giải pháp: Triệu hồi hàng trăm ngàn xe sản xuất từ 2023-2025 để nạp lại bản Firmware phần mềm sửa lỗi miễn phí tại đại lý.
+
+17. Bug chuyển đổi dự phòng (Failover) hệ thống làm mát DBS Bank (Tháng 10/2023)
+
+Nguồn: CNA - DBS banking disruption
+
+Mô tả: Phần mềm giám sát nhiệt độ của Equinix (trung tâm dữ liệu của DBS) gặp lỗi logic khi xử lý tiến trình ngắt mạng, khiến các tín hiệu Failover (chuyển đổi máy chủ dự phòng) không kích hoạt chính xác.
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: Ngân hàng số lớn nhất Đông Nam Á bị sập hoàn toàn ATM, thẻ tín dụng và ứng dụng ngân hàng suốt một ngày. DBS bị cơ quan quản lý nhà nước phạt giới hạn kinh doanh trong 6 tháng.
+
+Giải pháp: Chuyển đổi định tuyến dữ liệu thủ công, cập nhật mã nguồn phần mềm để khắc phục nút thắt cổ chai tín hiệu báo động nhiệt độ.
+
+18. Lỗ hổng mạng VPN Viasat KA-SAT (Tháng 2/2022)
+
+Nguồn: Reuters - Viasat satellite hack
+
+Mô tả: Lỗ hổng cấu hình trong phần mềm quản lý VPN của Viasat. Hacker xâm nhập mạng quản lý và đẩy một phần mềm độc hại (AcidRain) xuống để xóa sạch (wipe) bộ nhớ flash của mọi modem.
+
+Mức độ nghiêm trọng: Rất Cao.
+
+Hậu quả: Hàng chục ngàn modem vệ tinh tại Châu Âu (bao gồm mạng lưới chỉ huy quân đội Ukraine và 5.800 tuabin gió ở Đức) biến thành cục gạch.
+
+Giải pháp: Vì modem đã mất hệ điều hành cốt lõi và không thể nâng cấp Firmware OTA, Viasat bắt buộc phải giao hàng chục ngàn modem mới tinh (phần cứng vật lý) đến từng khách hàng.
+
+19. Lỗ hổng mạng ảo Nissan Australia (Tháng 12/2023)
+
+Nguồn: ABC News - Nissan data breach
+
+Mô tả: Thiết lập phần mềm VPN từ xa chưa được vá lỗ hổng Zero-day, cho phép nhóm tin tặc Akira truy cập và mã hóa các hệ thống mạng quan trọng.
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: 100.000 khách hàng tại Úc và New Zealand bị rò rỉ dữ liệu cá nhân, một số hệ thống hoạt động bị khóa chặt.
+
+Giải pháp: Ngắt toàn bộ hệ thống ngoại vi, xây dựng lại tường lửa bảo mật, báo cáo lên cơ quan không gian mạng Úc.
+
+20. Phần mềm Quản trị dữ liệu British Library thiếu bảo vệ (Tháng 10/2023)
+
+Nguồn: British Library Cyber Incident Report
+
+Mô tả: Hệ thống phần mềm quản lý kho lưu trữ dữ liệu cũ (legacy system) của Thư viện Anh không hỗ trợ mã hóa bảo mật hiện đại và xác thực đa luồng, bị hacker Rhysida đột nhập phá hoại hoàn toàn cấu trúc dữ liệu.
+
+Mức độ nghiêm trọng: Cao.
+
+Hậu quả: Thư viện bị mất hàng loạt mục lục trực tuyến lịch sử quý giá, website và mạng nội bộ sập suốt nhiều tháng. Ước tính chi phí xây dựng lại mạng lưới lên tới 7 triệu Bảng.
+
+Giải pháp: Loại bỏ hoàn toàn hệ thống phần mềm cũ, xây dựng hệ thống quản lý dữ liệu đám mây (Cloud) hoàn toàn mới dưới các tiêu chuẩn an toàn hiện đại.
+
+Hy vọng danh sách này đã cung cấp đầy đủ dữ kiện, đường link tin cậy và cấu trúc rõ ràng để bạn có thể hoàn thành xuất sắc yêu cầu của môn học QA/QC. Chúc bạn phân tích các lỗi AI (Bias/Hallucination) thành công nhé!

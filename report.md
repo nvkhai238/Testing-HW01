@@ -692,12 +692,12 @@ The AI hallucinated that "disgruntled McDonald's workers coordinated a global ha
 
 ### Defect 13 – UK NATS Air Traffic Control System Failure (August 2023)
 
-| Field        | Details                                                                                   |
-| ------------ | ----------------------------------------------------------------------------------------- |
-| **Date**     | August 28, 2023                                                                           |
-| **Source**   | [BBC News – NATS air traffic control failure](https://www.bbc.com/news/business-66735541) |
-| **Category** | Software Parser / Unhandled Edge Case                                                     |
-| **Severity** | Critical                                                                                  |
+| Field        | Details                                                                                       |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| **Date**     | August 28, 2023                                                                               |
+| **Source**   | [BBC News – NATS air traffic control failure](https://www.bbc.com/news/articles/cev9l3dekkko) |
+| **Category** | Software Parser / Unhandled Edge Case                                                         |
+| **Severity** | Critical                                                                                      |
 
 **Description:**  
 The UK's National Air Traffic Services (NATS) system crashed because its flight plan data parser encountered a single unusually formatted flight plan packet — a waypoint with duplicate coordinates that violated expected data constraints. The parser could not handle this malformed input, and because both the primary and backup systems used the same parser code, both entered a fail-safe shutdown simultaneously.
@@ -943,33 +943,15 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 
 ## 3.2 AI Audit Report – Gemini Output (Appendix A)
 
-> Gemini được yêu cầu thiết kế 15 test case cho máy lạnh Toshiba RAS-H10Z2KCVG-V. Toàn bộ output gốc được lưu trong `req3.md`. Bảng dưới đây là kết quả audit từng test case theo chuẩn ISTQB trước khi đưa vào report.
+> 📋 **Xem file [`AI Audit.md`](AI%20Audit.md) để xem toàn bộ nhật ký tương tác với AI, bao gồm prompt gốc, answer đầy đủ (không chỉnh sửa), verdict và student fix.**
 
-| TC   | Tên gốc (Gemini)                             | Verdict AI    | Lý do                                                                                                                                                                         |
-| ---- | -------------------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| TC01 | Bật/Tắt nguồn bằng Remote                    | ✅ VALID      | Đúng chức năng cơ bản, precondition và expected rõ ràng.                                                                                                                      |
-| TC02 | Chế độ làm lạnh (Cool Mode)                  | ✅ VALID      | Kiểm tra đúng chế độ chính, expected có thể quan sát được.                                                                                                                    |
-| TC03 | Thay đổi nhiệt độ                            | ⚠️ INCOMPLETE | Thiếu giá trị biên cụ thể (16 °C / 30 °C). Chỉ nói "lên 30 °C, xuống 18 °C" — không test boundary thực sự (xem thêm dưới đây có nhấn ▼ dưới 16 °C không).                     |
-| TC04 | Cấp độ quạt gió (Fan Speed)                  | ✅ VALID      | Liệt kê đủ 4 cấp: Low, Med, High, Auto.                                                                                                                                       |
-| TC05 | Cánh đảo gió (Swing)                         | ✅ VALID      | Test cả start và stop swing, expected rõ ràng.                                                                                                                                |
-| TC06 | Quét mã QR bảo hành trên tem                 | ⚠️ INCOMPLETE | Kiểm tra nhãn dán / dịch vụ ngoài, không phải chức năng thiết bị. Có thể bổ sung như test xác thực nhãn hiệu.                                                                 |
-| TC07 | Gọi Hotline 18001529                         | ❌ INVALID    | Đây là kiểm tra dịch vụ bên ngoài (tổng đài), **không phải kiểm tra thiết bị vật lý**. Nằm ngoài phạm vi test vật lý.                                                         |
-| TC08 | Chế độ Hút ẩm (Dry Mode)                     | ✅ VALID      | Phù hợp kiểm tra mode thực tế.                                                                                                                                                |
-| TC09 | Chế độ Quạt (Fan Only)                       | ✅ VALID      | Expected kiểm tra được (không có hơi lạnh, dàn nóng không chạy).                                                                                                              |
-| TC10 | Hẹn giờ tắt máy (Timer Off)                  | ✅ VALID      | Timer là chức năng thực tế, expected đo đếm được theo thời gian.                                                                                                              |
-| TC11 | Hẹn giờ bật máy (Timer On)                   | ❌ INVALID    | **Xác nhận thực tế: Toshiba RAS-H10Z2KCVG-V KHÔNG có chức năng Timer On** — chỉ có Timer Off. TC này test chức năng không tồn tại → thay bằng Compressor Cycling (TC-10 mới). |
-| TC12 | Làm lạnh nhanh (Hi-Power / Turbo)            | ✅ VALID      | Model RAS-H10Z2KCVG-V có làm lạnh nhanh                                                                                                                                       |
-| TC13 | Tự khởi động lại khi cúp điện (Auto-Restart) | ✅ VALID      | Precondition và expected rõ ràng, có thể thực thi bằng ngắt CB.                                                                                                               |
-| TC14 | Remote bị che khuất (IR Blocked)             | ✅ VALID      | Đây là một edge case tốt — Gemini tự tìm ra.                                                                                                                                  |
-| TC15 | Tháo lắp lưới lọc bụi                        | ✅ VALID      | Test vật lý cơ học, expected quan sát được trực tiếp.                                                                                                                         |
+Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 
-**Tổng kết Audit:**
+- ✅ VALID: **11/15** (73%)
+- ⚠️ INCOMPLETE: **3/15** (TC03 thiếu BVA, TC06 scope sai, TC12 chưa xác nhận model)
+- ❌ INVALID: **1/15** (TC07 – kiểm tra tổng đài bên ngoài, không phải thiết bị)
 
-- ✅ VALID: **12/15** (73%)
-- ⚠️ INCOMPLETE: **2/15** (TC03, TC06, TC12)
-- ❌ INVALID: **1/15** (TC07 – kiểm tra tổng đài ngoài)
-
-**Student Fix:** TC03 bổ sung kiểm tra boundary 16 °C và thử bấm thêm 1 lần. TC07 được thay bằng TC07\* (Kiểm tra tem nhãn và thông tin model).
+**Student Fix:** TC03 bổ sung boundary value analysis (bấm vượt 16°C và 30°C). TC07 thay bằng Dry Mode chi tiết. TC11 (Timer On) phát hiện chức năng không tồn tại trên thiết bị → thay bằng Compressor Cycling.
 
 ---
 
@@ -990,7 +972,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Lần 1: dàn lạnh phát 1 tiếng "bíp", đèn LED sáng, cánh đảo gió mở, quạt khởi động. Lần 2: dàn lạnh phát tiếng "bíp", cánh đảo gió đóng lại, quạt dừng, đèn LED tắt.                                                                                                       |
 | **Actual Result**   | Máy lạnh bật tắt bình thường                                                                                                                                                                                                                                              |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                                      |
-| **Video?**          | Có (TC-01 là 1 trong ≥ 5 TC cần quay video)                                                                                                                                                                                                                               |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/gXftU1iB-bM) (TC-01 là 1 trong ≥ 5 TC cần quay video)                                                                                                                                                                      |
 
 ---
 
@@ -1005,7 +987,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Sau 3–5 phút, luồng gió từ dàn lạnh lạnh rõ rệt (thấp hơn nhiệt độ phòng); dàn nóng phát ra tiếng máy nén.                                                                                                                                            |
 | **Actual Result**   | Máy lạnh làm lạnh đúng theo yêu cầu Mode Cool, dàn nóng phát ra tiếng máy nén                                                                                                                                                                         |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                  |
-| **Video?**          | Có                                                                                                                                                                                                                                                    |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/F90uU1WwLIc)                                                                                                                                                                                           |
 
 ---
 
@@ -1020,7 +1002,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Màn hình dừng tại **16 °C** khi bấm ▼ quá giới hạn (không giảm thêm); dừng tại **30 °C** khi bấm ▲ quá giới hạn (không tăng thêm). Không có tiếng beep lỗi bất thường.                                                                                     |
 | **Actual Result**   | Màn hình dừng tại **16 °C** khi bấm ▼ quá giới hạn (không giảm thêm); dừng tại **30 °C** khi bấm ▲ quá giới hạn (không tăng thêm).                                                                                                                         |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                       |
-| **Video?**          | Có                                                                                                                                                                                                                                                         |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/_lWj1izAb9w)                                                                                                                                                                                                |
 
 ---
 
@@ -1035,7 +1017,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Màn hình/đèn hiển thị đúng cấp độ mỗi lần nhấn; luồng gió và tiếng ồn tăng dần từ Low → High; ở Auto máy tự điều chỉnh tốc độ theo nhiệt độ phòng.                                                                                                  |
 | **Actual Result**   | Fan Speed có tùy chỉnh theo từng cấp độ giống Expected Result                                                                                                                                                                                       |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                |
-| **Video?**          | Có                                                                                                                                                                                                                                                  |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/1fhb3yH59z4)                                                                                                                                                                                         |
 
 ---
 
@@ -1050,7 +1032,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Cánh di chuyển mượt mà, không kêu cót két; dừng đúng vị trí khi nhấn lần 2; vị trí được giữ nguyên (không trôi).                                                                                                                                                              |
 | **Actual Result**   | Cánh đảo gió hoạt động bình thường, kết quả như Expected Result                                                                                                                                                                                                               |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                                          |
-| **Video?**          | Có                                                                                                                                                                                                                                                                            |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/W7bfGj6GrGY)                                                                                                                                                                                                                   |
 
 ---
 
@@ -1082,7 +1064,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Quạt chạy tốc độ thấp hơn Cool; hơi lạnh nhẹ (không mạnh như Cool); máy nén ngắt quãng; độ ẩm phòng giảm sau 15 phút.                                                                                                                                                          |
 | **Actual Result**   | Cảm giác độ ẩm có chút thay đổi theo từng chế độ nhưng không rõ ràng lắm vì thiếu thiết bị xác thực độ ẩm lúc test nên chủ yếu dựa vào cảm quan cá nhân                                                                                                                        |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                                           |
-| **Video?**          | ❌                                                                                                                                                                                                                                                                             |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/ZNhTeLj-6uc)                                                                                                                                                                                                                    |
 
 ---
 
@@ -1095,8 +1077,8 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Input**           | Remote: nhấn **Mode** chuyển sang **Fan** (biểu tượng quạt).                                                                                                                              |
 | **Steps**           | 1. Nhấn **Mode** → chuyển sang **Fan**. <br>2. Chờ 2 phút. <br>3. Đặt tay trước cửa gió — cảm nhận nhiệt độ gió. <br>4. Ra ngoài (hoặc nghe qua tường) — xác nhận tiếng dàn nóng đã dừng. |
 | **Expected Result** | Luồng gió ra ở nhiệt độ phòng (không lạnh, không ấm); dàn nóng dừng hoạt động sau ≤ 1 phút; không có tiếng máy nén.                                                                       |
-| **Actual Result**   | Chế độ Fan Only có hoạt động và cục nóng không phát tiếng kêu                                                                                                                             |
-| **Verdict**         | Pass                                                                                                                                                                                      |
+| **Actual Result**   | Khi chuyển sang Fan Only, cục nóng (dàn nóng) **không tắt** mà vẫn tiếp tục hoạt động và phát ra tiếng ồn — máy nén đáng lẽ phải dừng. → **DEF-001** ([Issue #1](https://github.com/nvkhai238/Testing-HW01/issues/1)) |
+| **Verdict**         | ❌ Fail                                                                                                                                                                                  |
 | **Video?**          | ❌                                                                                                                                                                                        |
 
 ---
@@ -1112,7 +1094,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Đèn báo hẹn giờ sáng ngay sau khi cài; đúng 30 phút sau máy tắt hoàn toàn (beep, cánh gió đóng, đèn tắt).                                                                                                                          |
 | **Actual Result**   | Điều hòa tự tắt sau đúng 30 phút có chút sai số do quá trình bấm                                                                                                                                                                   |
 | **Verdict**         | Pass                                                                                                                                                                                                                               |
-| **Video?**          | Có                                                                                                                                                                                                                                 |
+| **Video?**          | Không                                                                                                                                                                                                                              |
 
 ---
 
@@ -1144,7 +1126,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Nếu CÓ: quạt chạy tốc độ tối đa, hơi lạnh mạnh hơn rõ rệt, sau 20 phút tự về chế độ thường. Nếu KHÔNG CÓ: ghi nhận là INVALID (model không hỗ trợ).                                                                                                                                              |
 | **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                            |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                                                             |
-| **Video?**          | Có                                                                                                                                                                                                                                                                                               |
+| **Video?**          | Không                                                                                                                                                                                                                                                                                            |
 
 ---
 
@@ -1159,7 +1141,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Nếu model có tính năng Auto-Restart: máy tự Bật sau ≤ 3 phút, hiển thị đúng Cool 25 °C, không có mã lỗi. Nếu không có: máy ở trạng thái Tắt, không có mã lỗi, có thể Bật lại bình thường bằng remote.                                                                                               |
 | **Actual Result**   | Máy tự bật lại sau vài giây và giữ nguyên nhiệt độ như trước khi bị ngắt mạch                                                                                                                                                                                                                       |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                                                                |
-| **Video?**          | ✅ Có                                                                                                                                                                                                                                                                                               |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/HNruJW0Af7Y)                                                                                                                                                                                                                                         |
 
 ---
 
@@ -1174,7 +1156,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Khi bị che: dàn lạnh không beep, không thay đổi nhiệt độ. Khi bỏ tay: dàn lạnh phản hồi bình thường trong vòng 1 giây.                                                                                                                                                                                     |
 | **Actual Result**   | Khi bị che: dàn lạnh không beep, không thay đổi nhiệt độ. Khi bỏ tay: dàn lạnh phản hồi bình thường                                                                                                                                                                                                        |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                                                                       |
-| **Video?**          | Có                                                                                                                                                                                                                                                                                                         |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/k9OyEorIblg)                                                                                                                                                                                                                                                |
 
 ---
 
@@ -1204,7 +1186,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Expected Result** | Không có tiếng rung, cộng hưởng, hay cót két trong và sau mỗi lần chuyển tốc độ; âm thanh thay đổi chỉ là tiếng gió tăng/giảm tự nhiên; không cảm nhận rung bất thường qua vỏ máy.                                                                                                                         |
 | **Actual Result**   | Không có tiếng rung hay cót két sau mỗi lần chuyển tốc độ                                                                                                                                                                                                                                                  |
 | **Verdict**         | Pass                                                                                                                                                                                                                                                                                                       |
-| **Video?**          | ✅ Có                                                                                                                                                                                                                                                                                                      |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/5TZdHeFIwBk)                                                                                                                                                                                                                                                |
 
 ---
 
@@ -1223,8 +1205,8 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Input**           | Lắp pin yếu vào remote → thực hiện lệnh từ cự ly 2 m thẳng góc.                                                                                                                                                                                                                                                                                    |
 | **Steps**           | 1. Đo điện áp pin bằng đồng hồ — xác nhận 1.0–1.1 V/viên. <br>2. Lắp vào remote. <br>3. Từ 2 m thẳng góc: nhấn **Power** × 3 lần, quan sát máy. <br>4. Nhấn **Mode** × 5 lần nhanh — kiểm tra mode hiển thị. <br>5. Nhấn **Temp ▲** 1 lần — kiểm tra nhiệt độ có nhảy +2 (nhận 2 lệnh) hay không. <br>6. Ghi lại: bị miss, nhận đôi, hay lệnh sai. |
 | **Expected Result** | Mỗi lần nhấn chỉ được thực hiện 1 lệnh (không double-trigger, không skip); nếu tín hiệu quá yếu thì máy không phản hồi hoàn toàn — không có hành vi sai (nhiệt độ nhảy +2 hoặc mode bị thay đổi ngẫu nhiên).                                                                                                                                       |
-| **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                                                                              |
-| **Verdict**         | _(Pass / Fail)_                                                                                                                                                                                                                                                                                                                                    |
+| **Actual Result**   | Khi pin ở mức 1.0–1.1 V, remote bị **delay** rõ rệt và **bỏ sót lệnh (miss)** — phải nhấn nhiều lần máy mới nhận; tín hiệu IR suy giảm gây mất lệnh. → **DEF-003** ([Issue #3](https://github.com/nvkhai238/Testing-HW01/issues/3)) |
+| **Verdict**         | ❌ Fail                                                                                                                                                                                                                                                                                                                                            |
 | **Lý do AI bỏ sót** | Gemini chỉ ghi nhận "thay pin khi remote không hoạt động" nhưng không mô hình hóa **vùng chuyển tiếp** khi pin suy giảm — nơi tín hiệu IR còn đủ để phát nhưng thời gian xung bị méo, gây sai lệnh ở bộ giải mã phía đầu thu. Đây là kiến thức về giao thức IR (NEC/RC5) và đặc tính suy giảm điện áp mà AI không có.                              |
 
 ---
@@ -1271,6 +1253,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                                          |
 | **Verdict**         | _(Pass / Fail)_                                                                                                                                                                                                                                                                                                |
 | **Lý do AI bỏ sót** | Gemini không áp dụng kỹ thuật stress testing lên phần cứng embedded. Bộ nhớ đệm (input buffer) của vi điều khiển trong dàn lạnh có thể tích lũy các lệnh vượt mức giới hạn nếu thiếu logic kiểm soát — đây là kiến thức về embedded firmware testing không có trong tài liệu sản phẩm.                         |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/wMvRVpfe_n8)                                                                                                                                                                                                                                                    |
 
 ---
 
@@ -1286,6 +1269,7 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                                                                      |
 | **Verdict**         | _(Pass / Fail)_                                                                                                                                                                                                                                                                                                                            |
 | **Lý do AI bỏ sót** | AI không mô hình hóa môi trường vật lý thực tế — đặc biệt nhiễu quang học từ ánh nắng hoặc đèn LED cường độ cao lên bộ thu IR (photodiode). Đây là kiến thức về nhiễu tín hiệu quang trong thực địa, thường xuất hiện ở các phòng có cửa sổ lớn hướng tây vào buổi chiều — không được đề cập trong bất kỳ tài liệu sản phẩm tiêu dùng nào. |
+| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/3S9g_fz3j9w)                                                                                                                                                                                                                                                                                |
 
 ---
 
@@ -1296,53 +1280,65 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | TC-01   | Bật/Tắt nguồn bằng remote                                             | Functional – Cơ bản         | ❌        | ✅    | ✅ VALID                        |
 | TC-02   | Chế độ Cool – làm lạnh thực tế                                        | Functional – Mode           | ❌        | ✅    | ✅ VALID                        |
 | TC-03   | Boundary nhiệt độ 16 °C – 30 °C                                       | Boundary Value Analysis     | ❌        | ✅    | ⚠️ FIXED                        |
-| TC-04   | Cấp tốc độ quạt (Low/Med/High/Auto)                                   | Functional – Fan            | ❌        | ❌    | ✅ VALID                        |
+| TC-04   | Cấp tốc độ quạt (Low/Med/High/Auto)                                   | Functional – Fan            | ❌        | ✅    | ✅ VALID                        |
 | TC-05   | Cánh đảo gió Swing                                                    | Functional – Louver         | ❌        | ✅    | ✅ VALID                        |
 | TC-06   | Xác thực nhãn tem + QR bảo hành                                       | Label Verification          | ❌        | ❌    | ⚠️ FIXED                        |
-| TC-07\* | Chế độ Dry Mode (thay TC07 gốc – hotline)                             | Functional – Mode           | ❌        | ❌    | ❌ REPLACED                     |
+| TC-07\* | Chế độ Dry Mode (thay TC07 gốc – hotline)                             | Functional – Mode           | ❌        | ✅    | ❌ REPLACED                     |
 | TC-08   | Chế độ Fan Only                                                       | Functional – Mode           | ❌        | ❌    | ✅ VALID                        |
-| TC-09   | Hẹn giờ tắt (Timer Off 30 phút)                                       | Functional – Timer          | ❌        | ✅    | ✅ VALID                        |
+| TC-09   | Hẹn giờ tắt (Timer Off 30 phút)                                       | Functional – Timer          | ❌        | ❌    | ✅ VALID                        |
 | TC-10   | ~~Hẹn giờ bật (Timer On)~~ → **Compressor Cycling khi đạt set point** | Reliability – Thermostat    | ❌        | ❌    | ❌ REPLACED (Timer On không có) |
 | TC-11   | Hi-Power / Turbo (nếu model hỗ trợ)                                   | Functional – Optional       | ❌        | ❌    | ⚠️ FIXED                        |
 | TC-12   | Auto-Restart sau cúp điện                                             | Reliability – Power         | ❌        | ✅    | ✅ VALID                        |
-| TC-13   | Remote bị che khuất hoàn toàn (IR Blocked)                            | Functional – Remote         | ✅        | ❌    | ✅ VALID                        |
-| TC-14   | Tháo lắp lưới lọc bụi                                                 | Physical – Mechanical       | ❌        | ✅    | ✅ VALID                        |
+| TC-13   | Remote bị che khuất hoàn toàn (IR Blocked)                            | Functional – Remote         | ✅        | ✅    | ✅ VALID                        |
+| TC-14   | Tháo lắp lưới lọc bụi                                                 | Physical – Mechanical       | ❌        | ❌    | ✅ VALID                        |
 | TC-15   | Tiếng rung khi chuyển tốc độ quạt                                     | Non-functional – Acoustic   | ❌        | ✅    | ➕ Student                      |
 | EC-01   | **⭐ Pin remote gần hết (1.0–1.1 V)**                                 | **Edge – HW Interface**     | ✅        | ❌    | ➕ Student                      |
 | EC-02   | **⭐ Đọng sương trên cánh gió (độ ẩm cao)**                           | **Edge – Environmental**    | ✅        | ❌    | ➕ Student                      |
 | EC-03   | **⭐ Hai remote bấm đồng thời – xung đột IR**                         | **Edge – Concurrent Input** | ✅        | ❌    | ➕ Student                      |
-| EC-04   | **⭐ Bấm nút liên tiếp cực nhanh (Button Spam)**                      | **Edge – Input Stress**     | ✅        | ❌    | ➕ Student                      |
-| EC-05   | **⭐ Nhiễu IR từ ánh sáng mạnh**                                      | **Edge – Optical Noise**    | ✅        | ❌    | ➕ Student                      |
+| EC-04   | **⭐ Bấm nút liên tiếp cực nhanh (Button Spam)**                      | **Edge – Input Stress**     | ✅        | ✅    | ➕ Student                      |
+| EC-05   | **⭐ Nhiễu IR từ ánh sáng mạnh**                                      | **Edge – Optical Noise**    | ✅        | ✅    | ➕ Student                      |
 
 > **Tổng:** 15 TC (từ Gemini, đã audit) + 5 Edge Cases do Student thêm = **20 test cases**
-> **Video:** TC-01, 02, 03, 05, 09, 12, 14, 15 → **8 videos** (≥ yêu cầu 5)
+> **Video:** TC-01, 02, 03, 04, 05, 07, 12, 13, 15 + EC-04, EC-05 → **11 videos** (≥ yêu cầu 5)
 > **Edge cases không AI tìm ra:** EC-01 → EC-05 = **5 cases** (≥ yêu cầu 3)
 
 ---
 
 ## 3.6 Defects Tìm Được Khi Thực Thi
 
-> _(Điền sau khi thực thi trên thiết bị thật. Mục tiêu: ≥ 5 defects. Log dưới dạng GitHub Issues.)_
+> Sau khi thực thi 20 test case trên thiết bị thật (Toshiba RAS-H10Z2KCVG-V), em phát hiện **3 defects** và log lại dưới dạng GitHub Issues trên repo [`nvkhai238/Testing-HW01`](https://github.com/nvkhai238/Testing-HW01/issues).
 
-| Issue # | Mô tả defect | TC phát hiện | Severity | GitHub Issue Link |
-| ------- | ------------ | ------------ | -------- | ----------------- |
-| DEF-001 | _(TBD)_      | _(TBD)_      | _(TBD)_  | _(TBD)_           |
-| DEF-002 | _(TBD)_      | _(TBD)_      | _(TBD)_  | _(TBD)_           |
-| DEF-003 | _(TBD)_      | _(TBD)_      | _(TBD)_  | _(TBD)_           |
-| DEF-004 | _(TBD)_      | _(TBD)_      | _(TBD)_  | _(TBD)_           |
-| DEF-005 | _(TBD)_      | _(TBD)_      | _(TBD)_  | _(TBD)_           |
+**Tổng hợp 3 GitHub Issues:**
+
+![Tổng hợp 3 GitHub Issues đã log](img/issue/IssueTotal.png)
+
+| Issue # | Mô tả defect                                                                                                                                                                            | TC phát hiện | Severity  | GitHub Issue Link                                              |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- | -------------------------------------------------------------- |
+| DEF-001 | **[TC-08] Lỗi chế độ Fan Only:** Khi chuyển sang Fan Only, cục nóng (dàn nóng) không tắt mà vẫn tiếp tục chạy và phát ra tiếng ồn — đáng lẽ chỉ quạt trong nhà chạy, máy nén phải dừng. | TC-08        | 🔴 High   | [Issue #1](https://github.com/nvkhai238/Testing-HW01/issues/1) |
+| DEF-002 | **[TC-10] Lỗi Compressor Cycling:** Cục nóng (máy nén) không tự ngắt khi nhiệt độ phòng đã đạt set point (27 °C) mà vẫn chạy liên tục, thay vì cycling ON/OFF đúng chuẩn.               | TC-10        | 🔴 High   | [Issue #2](https://github.com/nvkhai238/Testing-HW01/issues/2) |
+| DEF-003 | **[EC-01] Lỗi nhận diện tín hiệu IR khi pin remote yếu (1.0–1.1 V):** Máy bị delay và bỏ sót lệnh (miss) do tín hiệu IR suy giảm khi pin gần hết.                                       | EC-01        | 🟡 Medium | [Issue #3](https://github.com/nvkhai238/Testing-HW01/issues/3) |
+
+> **Lưu ý trung thực:** Mục tiêu đề bài là ≥ 5 defects, tuy nhiên trong thực tế thực thi đủ 20 test case trên thiết bị, em chỉ quan sát được **3 defects** thực sự. Em log đúng số lượng thực tế thay vì tạo defect không có thật.
+
+**Chi tiết từng Issue (ảnh chụp GitHub):**
+
+**DEF-001 — [TC-08] Lỗi chế độ Fan Only** ([Issue #1](https://github.com/nvkhai238/Testing-HW01/issues/1)):
+
+![DEF-001 – TC-08 Fan Only: cục nóng không tắt](img/issue/Issue-TC08.png)
+
+**DEF-002 — [TC-10] Lỗi Compressor Cycling** ([Issue #2](https://github.com/nvkhai238/Testing-HW01/issues/2)):
+
+![DEF-002 – TC-10 Compressor Cycling: máy nén không ngắt khi đạt set point](img/issue/Issue-TC10.png)
+
+**DEF-003 — [EC-01] Lỗi nhận diện IR khi pin remote yếu** ([Issue #3](https://github.com/nvkhai238/Testing-HW01/issues/3)):
+
+![DEF-003 – EC-01 Pin remote yếu: delay và bỏ sót lệnh](img/issue/Issue-EC01.png)
 
 ---
 
 ## 3.7 AI Audit Report – Requirement 3 (Appendix A – AI 02)
 
-| Mục                    | Nội dung                                                                                                                                                                                                                                                                                                                                                                             |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **#1 – Prompt + Tool** | _Prompt gốc:_ "Thiết kế 15 test cases cho máy lạnh Toshiba RAS-H10Z2KCVG-V theo format: Objective / Input / Steps / Expected / Actual / Verdict." — **Tool:** Google Gemini; **Timestamp:** ~16:44, 03/06/2026. Output gốc lưu tại `req3.md`.                                                                                                                                        |
-| **#2 – AI Output**     | Gemini sinh ra 15 TC dạng bảng markdown: TC01–TC15. Bao gồm các chức năng cơ bản (Power, Cool, Dry, Fan, Timer, Swing, Filter, Auto-Restart). Một TC kiểm tra gọi hotline (ngoài phạm vi thiết bị). Một TC kiểm tra Hi-Power chưa xác nhận model có hỗ trợ. TC nhiệt độ thiếu test boundary thực sự.                                                                                 |
-| **#3 – Verdict**       | **INCOMPLETE** – 11/15 VALID; 3/15 INCOMPLETE (TC03, TC06, TC12); 1/15 INVALID (TC07). Edge cases: Gemini chỉ tự tìm được 1 (TC13 – IR Blocked), bỏ sót EC-01 đến EC-05.                                                                                                                                                                                                             |
-| **#4 – Reasoning**     | Theo ISTQB FL §4.2 (BVA): TC03 cần test ngay tại và vượt biên (16 °C − 1, 30 °C + 1), Gemini không làm vậy. Theo §4.4 (Error Guessing / Experience-based): 5 edge cases bổ sung đòi hỏi kiến thức thực địa về IR physics, nhiệt động học, embedded buffer — vượt quá khả năng suy luận từ specs của AI. TC07 vi phạm nguyên tắc scope: test đối tượng ngoài SUT (System Under Test). |
-| **#5 – Student Fix**   | (1) TC03: bổ sung bấm vượt biên. (2) TC06: mở rộng thành label verification. (3) TC07: thay bằng Dry Mode chi tiết. (4) TC11: thêm nhánh N/A. (5) Thêm TC-15 (acoustic). (6) Thêm 5 edge cases EC-01–EC-05 với giải thích tại sao AI bỏ sót.                                                                                                                                         |
+> 📋 **Toàn bộ nhật ký AI Audit (prompt gốc, AI output đầy đủ, verdict, student fix) đã được ghi lại trong file [`AI Audit.md`](AI%20Audit.md) – Phần V: Requirement 3 (Prompts 9–13).**
 
 **AI Accuracy Ratio (Req 3):**
 
@@ -1350,4 +1346,12 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 - ⚠️ INCOMPLETE: **20%** (3/15)
 - ❌ INVALID: **7%** (1/15)
 
-**Kết luận:** AI phù hợp để sinh test case chức năng cơ bản từ thông số kỹ thuật, nhưng **không thể thay thế** tester có kinh nghiệm trong việc phát hiện edge case vật lý, nhiễu môi trường, và lỗi giao thức phần cứng. Các kỹ thuật Error Guessing (ISTQB §4.4) đòi hỏi kiến thức thực địa mà AI không có. AI nên được dùng như công cụ tạo draft nhanh, sau đó bắt buộc phải có review của human tester.
+**Kết luận:** AI phù hợp để sinh test case chức năng cơ bản từ thông số kỹ thuật, nhưng **không thể thay thế** tester có kinh nghiệm trong việc phát hiện edge case vật lý, nhiễu môi trường, và lỗi giao thức phần cứng. Phát hiện điển hình: Gemini tạo TC11 (Timer On) cho chức năng không tồn tại trên thiết bị — minh chứng AI không thể thay thế việc test thực tế.
+
+---
+
+# Appendix B – AI Audit Report: ISTQB Fundamental Test Process Mindmap (CLO G 9.1)
+
+> 📋 **Toàn bộ nhật ký Mindmap AI Audit (prompt gốc, output Gemini đầy đủ, 3 lỗi tìm được, student fix với mindmap đã hiệu chỉnh) đã được ghi lại chi tiết trong file [`AI Audit.md`](AI%20Audit.md) – Phần II: Mindmap ISTQB (Prompts 4–5).**
+
+> **Yêu cầu (HW1 – G 9.1):** Yêu cầu AI Tool vẽ mindmap về ISTQB Fundamental Test Process, sau đó sinh viên phải tìm **≥ 3 sai sót** trong output của AI.
