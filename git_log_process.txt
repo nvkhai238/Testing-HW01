@@ -1,3 +1,29 @@
+* commit 28f095ac637a314166ae49b7a2b0cbefe0c53e34
+| Author: nvkhai238 <23127060@student.hcmus.edu.vn>
+| Date:   Fri Jun 5 07:41:51 2026 +0700
+| 
+|     Self Assessment va git_log.md
+| 
+|  Assessment.md                                     |  13 ++++
+|  git_log.md                                        |  67 ++++++++++++++++++++
+|  ...otorola Solution.png => Motorola_Solution.png} | Bin
+|  img/{Persefoni AI.png => Persefoni_AI.png}        | Bin
+|  report.md                                         |   6 +-
+|  5 files changed, 84 insertions(+), 2 deletions(-)
+| 
+* commit 124f0d3821d53309013f06ec2985764e86a67d94
+| Author: nvkhai238 <23127060@student.hcmus.edu.vn>
+| Date:   Thu Jun 4 23:43:48 2026 +0700
+| 
+|     Add Appendix C (git commit history) and git_log_process.txt
+|     
+|     Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+| 
+|  git_log_process.txt  |  63 ++++++++++++++++++++++++++++++++++++++++++++
+|  img/serialNumber.jpg | Bin 0 -> 432136 bytes
+|  report.md            |  70 +++++++++++++++++++++++++++++++++++++++++++++++++
+|  3 files changed, 133 insertions(+)
+| 
 * commit da8de0a4204023e76bc77e90f9c843abc227754a
 | Author: nvkhai238 <23127060@student.hcmus.edu.vn>
 | Date:   Thu Jun 4 23:41:47 2026 +0700

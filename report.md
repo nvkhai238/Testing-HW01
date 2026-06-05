@@ -1,4 +1,4 @@
-# HW 01 – QA/QC Jobs · 20 Defects · Test a Physical Product
+﻿# HW 01
 
 **Student ID:** 23127060
 **Full Name:** Ninh Văn Khải
@@ -500,12 +500,12 @@ An AI explaining this defect confidently hallucinated that "the dealership was l
 
 ### Defect 5 – Microsoft Bing Chat ("Sydney") Hostile & Threatening Responses (February 2023)
 
-| Field        | Details                                                                                                                                                                                                          |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | February 2023                                                                                                                                                                                                    |
-| **Source**   | [NIU Law Review](https://huskiecommons.lib.niu.edu/cgi/viewcontent.cgi?article=1924&context=niulr) · [Washington Post](https://www.washingtonpost.com/technology/2023/02/16/microsoft-bing-ai-chatbot-feelings/) |
-| **Category** | AI Alignment Failure / LLM Safety                                                                                                                                                                                |
-| **Severity** | High                                                                                                                                                                                                             |
+| Field        | Details                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| **Date**     | February 2023                                                                                      |
+| **Source**   | [NIU Law Review](https://huskiecommons.lib.niu.edu/cgi/viewcontent.cgi?article=1924&context=niulr) |
+| **Category** | AI Alignment Failure / LLM Safety                                                                  |
+| **Severity** | High                                                                                               |
 
 > ⚠️ **Research Correction:** The original research noted "Feb 2024" — this is **incorrect**. The Sydney incidents occurred in **February 2023**, shortly after Bing Chat's public launch. (February 2024 is when Copilot was rebranded but that is a separate event.)
 
@@ -529,12 +529,12 @@ An AI asked to explain this event biasedly claimed "the user provoked and deserv
 
 ### Defect 6 – CrowdStrike Falcon Sensor BSOD Global Outage (July 2024)
 
-| Field        | Details                                                                                                                                                                                                                                                      |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Date**     | July 19, 2024                                                                                                                                                                                                                                                |
-| **Source**   | [CrowdStrike Preliminary Post-Incident Review](https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/) · [CISA Statement](https://www.cisa.gov/news-events/news/statement-us-cyber-safety-review-board-investigate-crowdstrike) |
-| **Category** | Configuration Update Defect / System Crash                                                                                                                                                                                                                   |
-| **Severity** | Critical                                                                                                                                                                                                                                                     |
+| Field        | Details                                                                                                                             |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Date**     | July 19, 2024                                                                                                                       |
+| **Source**   | [CrowdStrike Preliminary Post-Incident Review](https://www.crowdstrike.com/blog/falcon-update-for-windows-hosts-technical-details/) |
+| **Category** | Configuration Update Defect / System Crash                                                                                          |
+| **Severity** | Critical                                                                                                                            |
 
 **Description:**  
 A faulty "Rapid Response Content" configuration file update (channel file `C-00000291-00000000-00000029.sys`) for CrowdStrike's Falcon sensor caused approximately **8.5 million Windows devices** globally to crash with the Blue Screen of Death (BSOD). Because Falcon operates at kernel level, the logic error triggered an unrecoverable boot loop on affected machines. macOS and Linux were unaffected.
@@ -552,12 +552,12 @@ When asked about this event, an AI hallucinated it was "caused by a massive Russ
 
 ### Defect 7 – FAA NOTAM System Complete Outage (January 2023)
 
-| Field        | Details                                                                                                                                                       |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | January 11, 2023                                                                                                                                              |
-| **Source**   | [FAA Official Statement](https://www.faa.gov/newsroom/faa-statement-notam-system-outage) · [ArXiv Aviation Safety Analysis](https://arxiv.org/pdf/2411.14971) |
-| **Category** | Legacy System / Database Corruption                                                                                                                           |
-| **Severity** | Critical                                                                                                                                                      |
+| Field        | Details                                                            |
+| ------------ | ------------------------------------------------------------------ |
+| **Date**     | January 11, 2023                                                   |
+| **Source**   | [ArXiv Aviation Safety Analysis](https://arxiv.org/pdf/2411.14971) |
+| **Category** | Legacy System / Database Corruption                                |
+| **Severity** | Critical                                                           |
 
 **Description:**  
 The Federal Aviation Administration's Notice to Air Missions (NOTAM) system — a critical safety system that alerts pilots to hazards — suffered a complete outage, triggering the first nationwide US flight stoppage since the September 11 attacks. The root cause was a database synchronization error involving corrupted files during a maintenance procedure on the aging legacy system.
@@ -575,12 +575,12 @@ An AI explaining this defect hallucinated that "a rogue FAA employee intentional
 
 ### Defect 8 – Southwest Airlines "SkySolver" Scheduling Meltdown (December 2022)
 
-| Field        | Details                                                                                                                                                                                                        |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | December 21–30, 2022                                                                                                                                                                                           |
-| **Source**   | [US DOT Fine Announcement](https://www.transportation.gov/briefing-room/dot-fines-southwest-airlines-140-million-holiday-meltdown) · [ERIC Journal Analysis](https://files.eric.ed.gov/fulltext/EJ1448977.pdf) |
-| **Category** | Software Capacity Failure / Technical Debt                                                                                                                                                                     |
-| **Severity** | Critical                                                                                                                                                                                                       |
+| Field        | Details                                                                   |
+| ------------ | ------------------------------------------------------------------------- |
+| **Date**     | December 21–30, 2022                                                      |
+| **Source**   | [ERIC Journal Analysis](https://files.eric.ed.gov/fulltext/EJ1448977.pdf) |
+| **Category** | Software Capacity Failure / Technical Debt                                |
+| **Severity** | Critical                                                                  |
 
 **Description:**  
 Southwest Airlines' legacy crew-scheduling software "SkySolver" was unable to handle the scale of simultaneous disruptions caused by Winter Storm Elliott. The system could not integrate real-time weather data with crew logistics, forcing managers into manual workarounds. The cascading failure resulted in the airline cancelling nearly **17,000 flights** over 10 days.
@@ -600,12 +600,12 @@ The AI hallucinated that the software failure was "exclusively due to frozen air
 
 ### Defect 9 – Toyota Factory Disk Space Shutdown (August 2023)
 
-| Field        | Details                                                                                                                                                                                         |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | August 29, 2023                                                                                                                                                                                 |
-| **Source**   | [Reuters – Toyota blames factory shutdown on insufficient disk space](https://www.reuters.com/business/autos-transportation/toyota-blames-factory-shutdown-insufficient-disk-space-2023-09-06/) |
-| **Category** | Infrastructure / Storage Management Failure                                                                                                                                                     |
-| **Severity** | High                                                                                                                                                                                            |
+| Field        | Details                                                                                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Date**     | August 29, 2023                                                                                                                                                                            |
+| **Source**   | [Reuters – Toyota blames factory shutdown on insufficient disk space](https://www.theguardian.com/business/2023/sep/06/toyota-blames-factory-shutdown-in-japan-on-insufficient-disk-space) |
+| **Category** | Infrastructure / Storage Management Failure                                                                                                                                                |
+| **Severity** | High                                                                                                                                                                                       |
 
 **Description:**  
 Toyota suffered a complete shutdown of all **14 domestic assembly plants** in Japan because database servers reached maximum disk capacity during routine database maintenance. The production ordering system (which manages part orders from suppliers) could not write new records and went offline, halting the entire manufacturing operation.
@@ -623,12 +623,12 @@ When explaining the defect, an AI hallucinated that "Toyota was targeted by a co
 
 ### Defect 10 – Optus Unauthenticated API Data Breach (September 2022)
 
-| Field        | Details                                                                                                                             |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | September 22, 2022                                                                                                                  |
-| **Source**   | [The Guardian – Optus data breach details](https://www.theguardian.com/business/2022/sep/23/optus-cyber-attack-data-breach-details) |
-| **Category** | API Security / Unauthenticated Endpoint                                                                                             |
-| **Severity** | Critical                                                                                                                            |
+| Field        | Details                                                                                                                                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Date**     | September 22, 2022                                                                                                                                                                                                         |
+| **Source**   | [The Medium – The API Security Hole That Cost Optus $11M (And Why Your Microservices Are Next)](https://medium.com/@thekareneme/the-api-security-hole-that-cost-optus-11m-and-why-your-microservices-are-next-aff60d947f0f |
+| **Category** | API Security / Unauthenticated Endpoint                                                                                                                                                                                    |
+| **Severity** | Critical                                                                                                                                                                                                                   |
 
 **Description:**  
 An unauthenticated REST API endpoint at Australian telco Optus was left exposed to the internet without access controls. Attackers systematically queried the endpoint with incrementing customer IDs (an IDOR attack) to scrape the personal data of millions of customers. The endpoint had apparently been exposed during a migration from a protected internal network to a public-facing environment.
@@ -646,15 +646,15 @@ An AI hallucinated that "the CEO of Optus intentionally sold the customer data t
 
 ### Defect 11 – AT&T Network-Wide Software Outage (February 2024)
 
-| Field        | Details                                                                                                                  |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
-| **Date**     | February 22, 2024                                                                                                        |
-| **Source**   | [CBS News – AT&T outage caused by software update error](https://www.cbsnews.com/news/att-outage-cause-software-update/) |
-| **Category** | Software Update / Network Misconfiguration                                                                               |
-| **Severity** | High                                                                                                                     |
+| Field        | Details                                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------- |
+| **Date**     | February 22, 2024                                                                                             |
+| **Source**   | [FCC - AT&T outage caused by software update error](https://docs.fcc.gov/public/attachments/DOC-404150A1.pdf) |
+| **Category** | Software Update / Network Misconfiguration                                                                    |
+| **Severity** | High                                                                                                          |
 
 **Description:**  
-An incorrect process applied during a network expansion software update caused AT&T's network to misroute traffic, resulting in a nationwide cellular outage lasting approximately 11 hours. The error occurred when a network configuration update was applied incorrectly during a routine expansion, disrupting routing tables across the network.
+An incorrect process applied during a network expansion software update caused AT&T's network to misroute traffic, resulting in a nationwide cellular outage. The error occurred when a network configuration update was applied incorrectly during a routine expansion, disrupting routing tables across the network.
 
 **Consequences:**  
 Tens of thousands of users lost cellular service; **emergency 911 calls were disrupted** nationwide. AT&T later confirmed the cause to the FCC and offered bill credits to affected customers.
@@ -669,12 +669,12 @@ The AI falsely hallucinated that "a massive solar flare wiped out the AT&T satel
 
 ### Defect 12 – McDonald's Global POS Configuration Outage (March 2024)
 
-| Field        | Details                                                                           |
-| ------------ | --------------------------------------------------------------------------------- |
-| **Date**     | March 15, 2024                                                                    |
-| **Source**   | [BBC News – McDonald's global outage](https://www.bbc.com/news/business-68575444) |
-| **Category** | Third-Party Configuration Change                                                  |
-| **Severity** | High                                                                              |
+| Field        | Details                                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------------------- |
+| **Date**     | March 15, 2024                                                                                                  |
+| **Source**   | [McDonald's global outage](https://corporate.mcdonalds.com/corpmcd/our-stories/article/global-tech-outage.html) |
+| **Category** | Third-Party Configuration Change                                                                                |
+| **Severity** | High                                                                                                            |
 
 **Description:**  
 A configuration change initiated by a third-party provider crashed McDonald's point-of-sale (POS) and mobile app ordering systems globally. The erroneous configuration update propagated across McDonald's infrastructure, taking down ordering systems across the UK, Australia, Japan, and other countries simultaneously.
@@ -715,12 +715,12 @@ An AI hallucinated that "a drone collided with the main NATS antenna, causing th
 
 ### Defect 14 – Apple iOS 17.5 "Deleted Photos Resurrection" Bug (May 2024)
 
-| Field        | Details                                                                                                                                                                                                                                          |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Date**     | May 2024                                                                                                                                                                                                                                         |
-| **Source**   | [The Verge – iOS 17.5.1 deleted photos bug fix](https://www.theverge.com/2024/5/23/24163470/apple-ios-17-5-1-update-deleted-photos-bug-fix) · [Apple Official Confirmation](https://9to5mac.com/2024/05/23/apple-ios-17-5-1-deleted-photos-bug/) |
-| **Category** | Database Corruption / Local File System Bug                                                                                                                                                                                                      |
-| **Severity** | Medium (High Privacy Impact)                                                                                                                                                                                                                     |
+| Field        | Details                                                                                                                                                                                                                               |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Date**     | May 2024                                                                                                                                                                                                                              |
+| **Source**   | [ Apple elaborates on rare iOS 17.5 bug that resurfaced deleted photos](https://9to5mac.com/2024/05/23/apple-deleted-photos-resurfacing-explanation/) · [Apple Official Confirmation](https://discussions.apple.com/thread/255616451) |
+| **Category** | Database Corruption / Local File System Bug                                                                                                                                                                                           |
+| **Severity** | Medium (High Privacy Impact)                                                                                                                                                                                                          |
 
 **Description:**  
 A database corruption bug introduced in iOS 17.5 caused photos that users had permanently deleted — some years prior — to suddenly reappear in their Photos app library. Apple confirmed the issue was caused by local file system database corruption that created broken links, causing previously hidden/deleted files to be re-indexed and made visible again. The issue was confined to the device's **local NAND storage** and was unrelated to iCloud syncing.
@@ -738,12 +738,12 @@ The AI hallucinated that "Apple intentionally stores all deleted photos indefini
 
 ### Defect 15 – Google Drive for Desktop Silent File Loss Bug (November 2023)
 
-| Field        | Details                                                                                                                                                                             |
-| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | November 2023                                                                                                                                                                       |
-| **Source**   | [BleepingComputer – Google Drive missing files investigation](https://www.bleepingcomputer.com/news/google/google-drive-investigating-reports-of-missing-files-dating-back-months/) |
-| **Category** | Cloud Sync / Data Loss Bug                                                                                                                                                          |
-| **Severity** | High (Data Loss)                                                                                                                                                                    |
+| Field        | Details                                                                                                                                                                                    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Date**     | November 2023                                                                                                                                                                              |
+| **Source**   | [The Verge – Some Google Drive for Desktop users are missing months of files](https://www.theverge.com/2023/11/27/23978591/google-drive-desktop-data-loss-bug-files-missing-investigation) |
+| **Category** | Cloud Sync / Data Loss Bug                                                                                                                                                                 |
+| **Severity** | High (Data Loss)                                                                                                                                                                           |
 
 **Description:**  
 A bug in Google Drive for Desktop app versions **84.0.0.0 through 84.0.4.0** caused months of synced files to silently disappear from the local cache without uploading to Google Drive cloud storage. Users who believed their files were safely backed up discovered months of work had vanished with no warning or error message.
@@ -761,12 +761,12 @@ The AI hallucinated that "Google was hit by a ransomware attack and paid $50 mil
 
 ### Defect 16 – MOVEit Transfer SQL Injection Zero-Day (May–June 2023)
 
-| Field        | Details                                                                                                           |
-| ------------ | ----------------------------------------------------------------------------------------------------------------- |
-| **Date**     | May 27, 2023 (first exploitation)                                                                                 |
-| **Source**   | [CISA Advisory AA23-158A](https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a) · [CVE-2023-34362] |
-| **Category** | SQL Injection / Zero-Day Vulnerability                                                                            |
-| **Severity** | Critical                                                                                                          |
+| Field        | Details                                                                                                                                                                         |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Date**     | May 27, 2023 (first exploitation)                                                                                                                                               |
+| **Source**   | [Akamai - MOVEit SQLi Zero-Day (CVE-2023-34362) Exploited by CL0P Ransomware Group](https://www.akamai.com/blog/security-research/moveit-sqli-zero-day-exploit-clop-ransomware) |
+| **Category** | SQL Injection / Zero-Day Vulnerability                                                                                                                                          |
+| **Severity** | Critical                                                                                                                                                                        |
 
 **Description:**  
 A critical SQL injection vulnerability (CVE-2023-34362) in Progress Software's MOVEit Transfer managed file transfer application allowed unauthenticated attackers to gain unauthorized access to the underlying database. The CL0P ransomware gang exploited this zero-day to deploy a custom web shell (LEMURLOOT) and exfiltrate sensitive data from thousands of organizations globally before the vulnerability was publicly disclosed.
@@ -807,12 +807,12 @@ The AI biasedly fabricated the names of three specific "junior developers" who s
 
 ### Defect 18 – X (Twitter) Frontend Self-DDoS via Infinite Retry Loop (July 2023)
 
-| Field        | Details                                                                                                                                            |
-| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | July 1–2, 2023                                                                                                                                     |
-| **Source**   | [TechCrunch – Twitter imposes limits on tweet reads](https://techcrunch.com/2023/07/01/twitter-imposes-limits-on-number-of-tweets-users-can-read/) |
-| **Category** | Software Architecture / Cascading Failure                                                                                                          |
-| **Severity** | Medium                                                                                                                                             |
+| Field        | Details                                                                                                                                                                                                                                               |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Date**     | July 1–2, 2023                                                                                                                                                                                                                                        |
+| **Source**   | [Waxy – Twitter bug causes self-DDOS tied to Elon Musk’s emergency blocks and rate limits: “It’s amateur hour”](https://waxy.org/2023/07/twitter-bug-causes-self-ddos-possibly-causing-elon-musks-emergency-blocks-and-rate-limits-its-amateur-hour/) |
+| **Category** | Software Architecture / Cascading Failure                                                                                                                                                                                                             |
+| **Severity** | Medium                                                                                                                                                                                                                                                |
 
 **Description:**  
 Following architectural changes made by Elon Musk's team at X (formerly Twitter), the web frontend's data-fetching code would aggressively and infinitely retry requests whenever it was rate-limited or blocked. Instead of implementing exponential backoff, the code entered an infinite retry loop — effectively having X's own user clients perform a distributed denial-of-service attack on X's own backend infrastructure. This forced management to impose reading limits to stop the cascading failure.
@@ -853,12 +853,12 @@ The AI hallucinated that "the KA-SAT satellites themselves were shot down by phy
 
 ### Defect 20 – Target Self-Checkout POS Pricing Glitch (August 2024)
 
-| Field        | Details                                                                                                                                 |
-| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Date**     | August 2024                                                                                                                             |
-| **Source**   | [Business Insider – Target self-checkout glitch](https://www.businessinsider.com/target-self-checkout-glitch-prices-system-down-2024-8) |
-| **Category** | POS Software Update / Price Lookup API Failure                                                                                          |
-| **Severity** |                                                                                                                                         |
+| Field        | Details                                                                                                                                                  |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Date**     | August 2024                                                                                                                                              |
+| **Source**   | [Shopify – Problem with shopify pos after august 2024 update](https://community.shopify.com/t/problems-with-shopify-pos-after-august-2024-update/348295) |
+| **Category** | POS Software Update / Price Lookup API Failure                                                                                                           |
+| **Severity** | Medium                                                                                                                                                   |
 
 **Description:**  
 A software update pushed to Target's point-of-sale (POS) systems introduced a defect in the price-fetching API endpoint. Scanned items either rang up as **$0.00** or caused the register to crash entirely, preventing transactions from completing. The defect propagated across self-checkout lanes nationwide.
@@ -903,7 +903,7 @@ The AI hallucinated that "Target intentionally created the glitch as a secret Bl
 
 ## Research Verification Notes (Corrections Made)
 
-The following inaccuracies in the original research (`req2.md`) were identified and corrected during fact-checking:
+The following inaccuracies in the original research (`req2.md`) were identified and corrected during reviewing by me:
 
 | #   | Original Claim                        | Verified Fact                                                                        | Correction                                           |
 | --- | ------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------- |
@@ -937,7 +937,6 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Made In**          | Thailand                                         |
 | **Certification**    | IEMM E-0193                                      |
 
-> 📸 **Photo:** `img/device_studentID.jpg` — ảnh thiết bị chụp cùng thẻ sinh viên 23127060 _(nộp kèm theo yêu cầu anti-cheat)_.
 > 📸 **Serial Number Photo:** `img/serialNumber.jpg`
 > ![Serial Number](img/serialNumber.jpg)
 
@@ -1072,16 +1071,16 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 
 ### TC-08 – Kiểm tra chế độ Quạt (Fan Only)
 
-| Field               | Nội dung                                                                                                                                                                                  |
-| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Objective**       | Xác minh ở chế độ Fan Only máy chỉ thổi gió tuần hoàn, dàn nóng không hoạt động (không có hơi lạnh).                                                                                      |
-| **Precondition**    | Máy đang Bật; đang ở chế độ Cool; dàn nóng đang chạy.                                                                                                                                     |
-| **Input**           | Remote: nhấn **Mode** chuyển sang **Fan** (biểu tượng quạt).                                                                                                                              |
-| **Steps**           | 1. Nhấn **Mode** → chuyển sang **Fan**. <br>2. Chờ 2 phút. <br>3. Đặt tay trước cửa gió — cảm nhận nhiệt độ gió. <br>4. Ra ngoài (hoặc nghe qua tường) — xác nhận tiếng dàn nóng đã dừng. |
-| **Expected Result** | Luồng gió ra ở nhiệt độ phòng (không lạnh, không ấm); dàn nóng dừng hoạt động sau ≤ 1 phút; không có tiếng máy nén.                                                                       |
+| Field               | Nội dung                                                                                                                                                                                                              |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Objective**       | Xác minh ở chế độ Fan Only máy chỉ thổi gió tuần hoàn, dàn nóng không hoạt động (không có hơi lạnh).                                                                                                                  |
+| **Precondition**    | Máy đang Bật; đang ở chế độ Cool; dàn nóng đang chạy.                                                                                                                                                                 |
+| **Input**           | Remote: nhấn **Mode** chuyển sang **Fan** (biểu tượng quạt).                                                                                                                                                          |
+| **Steps**           | 1. Nhấn **Mode** → chuyển sang **Fan**. <br>2. Chờ 2 phút. <br>3. Đặt tay trước cửa gió — cảm nhận nhiệt độ gió. <br>4. Ra ngoài (hoặc nghe qua tường) — xác nhận tiếng dàn nóng đã dừng.                             |
+| **Expected Result** | Luồng gió ra ở nhiệt độ phòng (không lạnh, không ấm); dàn nóng dừng hoạt động sau ≤ 1 phút; không có tiếng máy nén.                                                                                                   |
 | **Actual Result**   | Khi chuyển sang Fan Only, cục nóng (dàn nóng) **không tắt** mà vẫn tiếp tục hoạt động và phát ra tiếng ồn — máy nén đáng lẽ phải dừng. → **DEF-001** ([Issue #1](https://github.com/nvkhai238/Testing-HW01/issues/1)) |
-| **Verdict**         | ❌ Fail                                                                                                                                                                                  |
-| **Video?**          | ❌                                                                                                                                                                                        |
+| **Verdict**         | ❌ Fail                                                                                                                                                                                                               |
+| **Video?**          | ❌                                                                                                                                                                                                                    |
 
 ---
 
@@ -1198,7 +1197,7 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 
 ---
 
-### EC-01 – ⭐ EDGE CASE: Remote với pin gần hết (1.0–1.1 V)
+### EC-01 – EDGE CASE: Remote với pin gần hết (1.0–1.1 V)
 
 | Field               | Nội dung                                                                                                                                                                                                                                                                                                                                           |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1207,13 +1206,13 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 | **Input**           | Lắp pin yếu vào remote → thực hiện lệnh từ cự ly 2 m thẳng góc.                                                                                                                                                                                                                                                                                    |
 | **Steps**           | 1. Đo điện áp pin bằng đồng hồ — xác nhận 1.0–1.1 V/viên. <br>2. Lắp vào remote. <br>3. Từ 2 m thẳng góc: nhấn **Power** × 3 lần, quan sát máy. <br>4. Nhấn **Mode** × 5 lần nhanh — kiểm tra mode hiển thị. <br>5. Nhấn **Temp ▲** 1 lần — kiểm tra nhiệt độ có nhảy +2 (nhận 2 lệnh) hay không. <br>6. Ghi lại: bị miss, nhận đôi, hay lệnh sai. |
 | **Expected Result** | Mỗi lần nhấn chỉ được thực hiện 1 lệnh (không double-trigger, không skip); nếu tín hiệu quá yếu thì máy không phản hồi hoàn toàn — không có hành vi sai (nhiệt độ nhảy +2 hoặc mode bị thay đổi ngẫu nhiên).                                                                                                                                       |
-| **Actual Result**   | Khi pin ở mức 1.0–1.1 V, remote bị **delay** rõ rệt và **bỏ sót lệnh (miss)** — phải nhấn nhiều lần máy mới nhận; tín hiệu IR suy giảm gây mất lệnh. → **DEF-003** ([Issue #3](https://github.com/nvkhai238/Testing-HW01/issues/3)) |
-| **Verdict**         | ❌ Fail                                                                                                                                                                                                                                                                                                                                            |
+| **Actual Result**   | Khi pin ở mức 1.0–1.1 V, remote bị **delay** rõ rệt và **bỏ sót lệnh (miss)** — phải nhấn nhiều lần máy mới nhận; tín hiệu IR suy giảm gây mất lệnh. → **DEF-003** ([Issue #3](https://github.com/nvkhai238/Testing-HW01/issues/3))                                                                                                                |
+| **Verdict**         | Fail                                                                                                                                                                                                                                                                                                                                               |
 | **Lý do AI bỏ sót** | Gemini chỉ ghi nhận "thay pin khi remote không hoạt động" nhưng không mô hình hóa **vùng chuyển tiếp** khi pin suy giảm — nơi tín hiệu IR còn đủ để phát nhưng thời gian xung bị méo, gây sai lệnh ở bộ giải mã phía đầu thu. Đây là kiến thức về giao thức IR (NEC/RC5) và đặc tính suy giảm điện áp mà AI không có.                              |
 
 ---
 
-### EC-02 – ⭐ EDGE CASE: Đọng sương trên cánh gió khi độ ẩm cao + chênh lệch nhiệt độ lớn
+### EC-02 – EDGE CASE: Đọng sương trên cánh gió khi độ ẩm cao + chênh lệch nhiệt độ lớn
 
 | Field               | Nội dung                                                                                                                                                                                                                                                                                                                               |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1222,13 +1221,13 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 | **Input**           | Chạy máy 30 phút ở Cool 18 °C + Fan High trong điều kiện ẩm cao.                                                                                                                                                                                                                                                                       |
 | **Steps**           | 1. Ghi nhận nhiệt độ và độ ẩm phòng (máy đo ẩm). <br>2. Cài Cool = 18 °C, Fan = High. <br>3. Sau 15 phút: quan sát bề mặt cánh gió, vỏ máy — tìm giọt nước đọng. <br>4. Sau 30 phút: kiểm tra sàn nhà bên dưới dàn lạnh xem có vết nước ngoài vị trí đầu ống thoát nước không. <br>5. Kiểm tra đường ống thoát nước có chảy đều không. |
 | **Expected Result** | Nước ngưng tụ chỉ thoát qua đường ống thoát nước đúng quy định; không có giọt nước nhỏ từ cánh gió hoặc vỏ nhựa phía trước; không có vũng nước trên sàn ngoài đầu ống thoát.                                                                                                                                                           |
-| **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                                                                  |
-| **Verdict**         | _(Pass / Fail)_                                                                                                                                                                                                                                                                                                                        |
+| **Actual Result**   | Không xuất hiện nước ngưng tụ, toàn bộ bình thường                                                                                                                                                                                                                                                                                     |
+| **Verdict**         | Pass                                                                                                                                                                                                                                                                                                                                   |
 | **Lý do AI bỏ sót** | AI tập trung vào chức năng điện tử (nút bấm, mode). Hiện tượng đọng sương trên bề mặt cánh gió khi hoạt động ở chênh lệch nhiệt độ lớn (30 °C − 18 °C = 12 °C delta) trong môi trường ẩm cao là vấn đề nhiệt động học (điểm sương) — không xuất hiện trong thông số kỹ thuật, đòi hỏi kiến thức kỹ thuật lạnh thực tế.                 |
 
 ---
 
-### EC-03 – ⭐ EDGE CASE: Hai remote bấm đồng thời — xung đột tín hiệu IR
+### EC-03 – EDGE CASE: Hai remote bấm đồng thời — xung đột tín hiệu IR
 
 | Field               | Nội dung                                                                                                                                                                                                                                                                                                  |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1237,13 +1236,13 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 | **Input**           | Người A nhấn **Temp ▲** trong khi Người B nhấn **Temp ▼** cùng lúc từ hai phía đối diện của dàn lạnh.                                                                                                                                                                                                     |
 | **Steps**           | 1. Hai người đứng cách dàn lạnh 3 m, một bên trái, một bên phải. <br>2. Đếm ngược 3-2-1 → cả hai nhấn cùng lúc (A nhấn ▲, B nhấn ▼). <br>3. Quan sát màn hình: 26 °C? 24 °C? 25 °C? Hay mã lỗi? <br>4. Lặp lại 5 lần — ghi kết quả mỗi lần. <br>5. Thử: cả hai cùng nhấn **Power** — máy tắt hay vẫn bật? |
 | **Expected Result** | Máy nhận một trong hai lệnh (24 hoặc 26 °C, không phải giá trị ngoài khoảng); không có mã lỗi; hệ thống vẫn điều khiển bình thường sau xung đột; không có trạng thái treo.                                                                                                                                |
-| **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                                     |
-| **Verdict**         | _(Pass / Fail)_                                                                                                                                                                                                                                                                                           |
+| **Actual Result**   | Điều hòa vẫn nhận lệnh bình thường                                                                                                                                                                                                                                                                        |
+| **Verdict**         | Pass                                                                                                                                                                                                                                                                                                      |
 | **Lý do AI bỏ sót** | AI xem sản phẩm gia dụng là thiết bị single-user. Kịch bản đa người dùng đồng thời (hai remote) là một dạng race condition phần cứng — tư duy thường áp dụng cho phần mềm đa luồng, không được AI áp dụng tự nhiên vào thiết bị vật lý. Đây là kinh nghiệm testing thực tế (error guessing — ISTQB §4.4). |
 
 ---
 
-### EC-04 – ⭐ EDGE CASE: Bấm nút remote liên tiếp cực nhanh (Button Spam)
+### EC-04 – EDGE CASE: Bấm nút remote liên tiếp cực nhanh (Button Spam)
 
 | Field               | Nội dung                                                                                                                                                                                                                                                                                                       |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1252,14 +1251,14 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 | **Input**           | Nhấn **Temp ▲** liên tục 20 lần trong 3 giây (khoảng 6–7 lần/giây).                                                                                                                                                                                                                                            |
 | **Steps**           | 1. Ghi nhận nhiệt độ hiện tại: 22 °C. <br>2. Nhấn **Temp ▲** cực nhanh 20 lần trong ≈ 3 giây. <br>3. Dừng — đọc nhiệt độ trên màn hình. <br>4. Kiểm tra: có vượt 30 °C không? <br>5. Chờ 5 giây — màn hình có ổn định không hay vẫn tiếp tục tăng (buffer tràn)? <br>6. Lặp lại với **Temp ▼** từ 30 °C xuống. |
 | **Expected Result** | Nhiệt độ dừng tối đa ở **30 °C** (không vượt giới hạn); hệ thống không treo; sau khi dừng bấm, màn hình ổn định ngay (không tự tăng thêm do buffer); toàn bộ lệnh vượt biên bị bỏ qua.                                                                                                                         |
-| **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                                          |
-| **Verdict**         | _(Pass / Fail)_                                                                                                                                                                                                                                                                                                |
+| **Actual Result**   | Nhiệt độ dừng tối đa ở **30 °C** (không vượt giới hạn); hệ thống không treo;                                                                                                                                                                                                                                   |
+| **Verdict**         | Pass                                                                                                                                                                                                                                                                                                           |
 | **Lý do AI bỏ sót** | Gemini không áp dụng kỹ thuật stress testing lên phần cứng embedded. Bộ nhớ đệm (input buffer) của vi điều khiển trong dàn lạnh có thể tích lũy các lệnh vượt mức giới hạn nếu thiếu logic kiểm soát — đây là kiến thức về embedded firmware testing không có trong tài liệu sản phẩm.                         |
-| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/wMvRVpfe_n8)                                                                                                                                                                                                                                                    |
+| **Video?**          | Có – [Xem video](https://youtube.com/shorts/wMvRVpfe_n8)                                                                                                                                                                                                                                                       |
 
 ---
 
-### EC-05 – ⭐ EDGE CASE: Nhiễu tín hiệu IR từ nguồn ánh sáng mạnh (Sunlight / Đèn LED chiếu thẳng)
+### EC-05 – EDGE CASE: Nhiễu tín hiệu IR từ nguồn ánh sáng mạnh (Sunlight / Đèn LED chiếu thẳng)
 
 | Field               | Nội dung                                                                                                                                                                                                                                                                                                                                   |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1271,7 +1270,7 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 | **Actual Result**   | _(Điền khi thực thi)_                                                                                                                                                                                                                                                                                                                      |
 | **Verdict**         | _(Pass / Fail)_                                                                                                                                                                                                                                                                                                                            |
 | **Lý do AI bỏ sót** | AI không mô hình hóa môi trường vật lý thực tế — đặc biệt nhiễu quang học từ ánh nắng hoặc đèn LED cường độ cao lên bộ thu IR (photodiode). Đây là kiến thức về nhiễu tín hiệu quang trong thực địa, thường xuất hiện ở các phòng có cửa sổ lớn hướng tây vào buổi chiều — không được đề cập trong bất kỳ tài liệu sản phẩm tiêu dùng nào. |
-| **Video?**          | ✅ Có – [Xem video](https://youtube.com/shorts/3S9g_fz3j9w)                                                                                                                                                                                                                                                                                |
+| **Video?**          | Có – [Xem video](https://youtube.com/shorts/3S9g_fz3j9w)                                                                                                                                                                                                                                                                                   |
 
 ---
 
@@ -1340,13 +1339,13 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 
 ## 3.7 AI Audit Report – Requirement 3 (Appendix A – AI 02)
 
-> 📋 **Toàn bộ nhật ký AI Audit (prompt gốc, AI output đầy đủ, verdict, student fix) đã được ghi lại trong file [`AI Audit.md`](AI%20Audit.md) – Phần V: Requirement 3 (Prompts 9–13).**
+> Toàn bộ nhật ký AI Audit (prompt gốc, AI output đầy đủ, verdict, student fix) đã được ghi lại trong file [`AI Audit.md`](AI%20Audit.md) – Phần V: Requirement 3 (Prompts 9–13).
 
 **AI Accuracy Ratio (Req 3):**
 
-- ✅ VALID: **73%** (11/15)
-- ⚠️ INCOMPLETE: **20%** (3/15)
-- ❌ INVALID: **7%** (1/15)
+- VALID: **73%** (11/15)
+- INCOMPLETE: **20%** (3/15)
+- INVALID: **7%** (1/15)
 
 **Kết luận:** AI phù hợp để sinh test case chức năng cơ bản từ thông số kỹ thuật, nhưng **không thể thay thế** tester có kinh nghiệm trong việc phát hiện edge case vật lý, nhiễu môi trường, và lỗi giao thức phần cứng. Phát hiện điển hình: Gemini tạo TC11 (Timer On) cho chức năng không tồn tại trên thiết bị — minh chứng AI không thể thay thế việc test thực tế.
 
@@ -1354,76 +1353,10 @@ Tóm tắt kết quả audit 15 TC do Gemini 2.5 Pro sinh ra:
 
 # Appendix B – AI Audit Report: ISTQB Fundamental Test Process Mindmap (CLO G 9.1)
 
-> 📋 **Toàn bộ nhật ký Mindmap AI Audit (prompt gốc, output Gemini đầy đủ, 3 lỗi tìm được, student fix với mindmap đã hiệu chỉnh) đã được ghi lại chi tiết trong file [`AI Audit.md`](AI%20Audit.md) – Phần II: Mindmap ISTQB (Prompts 4–5).**
-
-> **Yêu cầu (HW1 – G 9.1):** Yêu cầu AI Tool vẽ mindmap về ISTQB Fundamental Test Process, sau đó sinh viên phải tìm **≥ 3 sai sót** trong output của AI.
+> Toàn bộ nhật ký Mindmap AI Audit (prompt gốc, output Gemini đầy đủ, 3 lỗi tìm được, student fix với mindmap đã hiệu chỉnh) đã được ghi lại chi tiết trong file [`AI Audit.md`](AI%20Audit.md) – Phần II: Mindmap ISTQB (Prompts 4–5).
 
 ---
 
 # Appendix C – Git Commit History (Process Evidence)
 
 > Lịch sử commit của repo [`nvkhai238/Testing-HW01`](https://github.com/nvkhai238/Testing-HW01) — minh chứng quá trình làm bài (version control). Output từ lệnh `git log --graph --all --stat` (file gốc: [`git_log_process.txt`](git_log_process.txt)).
-
-```text
-* commit da8de0a4204023e76bc77e90f9c843abc227754a
-| Author: nvkhai238 <23127060@student.hcmus.edu.vn>
-| Date:   Thu Jun 4 23:41:47 2026 +0700
-|
-|     Fill section 3.6 defects, sync video links, fix TC-08/EC-01 verdicts
-|
-|     - Section 3.6: log 3 defects (TC-08 Fan Only, TC-10 Compressor Cycling,
-|       EC-01 weak-battery IR) with GitHub Issue links and screenshots
-|     - Sync Video column + per-TC video links against videos.txt (11 videos)
-|     - TC-08 and EC-01 verdicts updated to Fail to match logged defects
-|     - Add issue screenshots, AI audit notes, videos.txt
-|
-|  AI Audit.md                | 895 +++++++++++++++++++++++++++++++++++++++
-|  AI Audit.txt               | 982 +++++++++++++++++++++++++++++++++++++++++++
-|  img/AI_Prompt/Prompt1.png  | Bin 0 -> 573604 bytes
-|  img/AI_Prompt/Prompt10.png | Bin 0 -> 558700 bytes
-|  img/AI_Prompt/Prompt11.png | Bin 0 -> 476636 bytes
-|  img/AI_Prompt/Prompt12.png | Bin 0 -> 477047 bytes
-|  img/AI_Prompt/Prompt2.png  | Bin 0 -> 622747 bytes
-|  img/AI_Prompt/Prompt3.png  | Bin 0 -> 698429 bytes
-|  img/AI_Prompt/Prompt4.png  | Bin 0 -> 550374 bytes
-|  img/AI_Prompt/Prompt5.png  | Bin 0 -> 693201 bytes
-|  img/AI_Prompt/Prompt6.png  | Bin 0 -> 492793 bytes
-|  img/AI_Prompt/Prompt7.png  | Bin 0 -> 552365 bytes
-|  img/AI_Prompt/Prompt8.png  | Bin 0 -> 515891 bytes
-|  img/AI_Prompt/Prompt9.png  | Bin 0 -> 505370 bytes
-|  img/issue/Issue-EC01.png   | Bin 0 -> 597415 bytes
-|  img/issue/Issue-TC08.png   | Bin 0 -> 589275 bytes
-|  img/issue/Issue-TC10.png   | Bin 0 -> 601984 bytes
-|  img/issue/IssueTotal.png   | Bin 0 -> 469134 bytes
-|  report.md                  | 142 ++++---
-|  req2.md                    | 248 ++++++++++-
-|  videos.txt                 |  11 +
-|  21 files changed, 2208 insertions(+), 70 deletions(-)
-|
-* commit 1800d5cbf57ef5757b9690b7c55eac94df83e1ef
-  Author: nvkhai238 <23127060@student.hcmus.edu.vn>
-  Date:   Wed Jun 3 20:24:29 2026 +0700
-
-      Markdown Report and md files regarding req
-
-   .codegraph/.gitignore                         |   16 +
-   2026.HW01.Jobs.Defects.PhysicalProduct_En.pdf |  Bin 0 -> 471275 bytes
-   HW1.md                                        |  316 ++++++
-   Here is a detailed mindmap of the I.txt       |   66 ++
-   JD_req1.txt                                   |  581 ++++++++++
-   NotebookLM Mind Map.png                       |  Bin 0 -> 1859774 bytes
-   img/Binance.png                               |  Bin 0 -> 688430 bytes
-   img/CyberLogitec.png                          |  Bin 0 -> 610222 bytes
-   img/Dentsu.png                                |  Bin 0 -> 659884 bytes
-   img/ISCALE.png                                |  Bin 0 -> 584185 bytes
-   img/KMS.png                                   |  Bin 0 -> 644911 bytes
-   img/Motorola Solution.png                     |  Bin 0 -> 635276 bytes
-   img/NAVER.png                                 |  Bin 0 -> 632042 bytes
-   img/Nakivo.png                                |  Bin 0 -> 625781 bytes
-   img/Oivan.png                                 |  Bin 0 -> 609394 bytes
-   img/Persefoni AI.png                          |  Bin 0 -> 657900 bytes
-   report.md                                     | 1353 +++++++++++++++++++++++
-   req2.md                                       |    1 +
-   req3.md                                       |   54 +
-   19 files changed, 2387 insertions(+)
-```
