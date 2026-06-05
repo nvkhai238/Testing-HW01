@@ -1,0 +1,67 @@
+# Appendix C – Git Commit History (Process Evidence)
+
+> Lịch sử commit của repo [`nvkhai238/Testing-HW01`](https://github.com/nvkhai238/Testing-HW01) — minh chứng quá trình làm bài (version control). Output từ lệnh `git log --graph --all --stat` (file gốc: [`git_log_process.txt`](git_log_process.txt)).
+
+```text
+* commit da8de0a4204023e76bc77e90f9c843abc227754a
+| Author: nvkhai238 <23127060@student.hcmus.edu.vn>
+| Date:   Thu Jun 4 23:41:47 2026 +0700
+|
+|     Fill section 3.6 defects, sync video links, fix TC-08/EC-01 verdicts
+|
+|     - Section 3.6: log 3 defects (TC-08 Fan Only, TC-10 Compressor Cycling,
+|       EC-01 weak-battery IR) with GitHub Issue links and screenshots
+|     - Sync Video column + per-TC video links against videos.txt (11 videos)
+|     - TC-08 and EC-01 verdicts updated to Fail to match logged defects
+|     - Add issue screenshots, AI audit notes, videos.txt
+|
+|  AI Audit.md                | 895 +++++++++++++++++++++++++++++++++++++++
+|  AI Audit.txt               | 982 +++++++++++++++++++++++++++++++++++++++++++
+|  img/AI_Prompt/Prompt1.png  | Bin 0 -> 573604 bytes
+|  img/AI_Prompt/Prompt10.png | Bin 0 -> 558700 bytes
+|  img/AI_Prompt/Prompt11.png | Bin 0 -> 476636 bytes
+|  img/AI_Prompt/Prompt12.png | Bin 0 -> 477047 bytes
+|  img/AI_Prompt/Prompt2.png  | Bin 0 -> 622747 bytes
+|  img/AI_Prompt/Prompt3.png  | Bin 0 -> 698429 bytes
+|  img/AI_Prompt/Prompt4.png  | Bin 0 -> 550374 bytes
+|  img/AI_Prompt/Prompt5.png  | Bin 0 -> 693201 bytes
+|  img/AI_Prompt/Prompt6.png  | Bin 0 -> 492793 bytes
+|  img/AI_Prompt/Prompt7.png  | Bin 0 -> 552365 bytes
+|  img/AI_Prompt/Prompt8.png  | Bin 0 -> 515891 bytes
+|  img/AI_Prompt/Prompt9.png  | Bin 0 -> 505370 bytes
+|  img/issue/Issue-EC01.png   | Bin 0 -> 597415 bytes
+|  img/issue/Issue-TC08.png   | Bin 0 -> 589275 bytes
+|  img/issue/Issue-TC10.png   | Bin 0 -> 601984 bytes
+|  img/issue/IssueTotal.png   | Bin 0 -> 469134 bytes
+|  report.md                  | 142 ++++---
+|  req2.md                    | 248 ++++++++++-
+|  videos.txt                 |  11 +
+|  21 files changed, 2208 insertions(+), 70 deletions(-)
+|
+* commit 1800d5cbf57ef5757b9690b7c55eac94df83e1ef
+  Author: nvkhai238 <23127060@student.hcmus.edu.vn>
+  Date:   Wed Jun 3 20:24:29 2026 +0700
+
+      Markdown Report and md files regarding req
+
+   .codegraph/.gitignore                         |   16 +
+   2026.HW01.Jobs.Defects.PhysicalProduct_En.pdf |  Bin 0 -> 471275 bytes
+   HW1.md                                        |  316 ++++++
+   Here is a detailed mindmap of the I.txt       |   66 ++
+   JD_req1.txt                                   |  581 ++++++++++
+   NotebookLM Mind Map.png                       |  Bin 0 -> 1859774 bytes
+   img/Binance.png                               |  Bin 0 -> 688430 bytes
+   img/CyberLogitec.png                          |  Bin 0 -> 610222 bytes
+   img/Dentsu.png                                |  Bin 0 -> 659884 bytes
+   img/ISCALE.png                                |  Bin 0 -> 584185 bytes
+   img/KMS.png                                   |  Bin 0 -> 644911 bytes
+   img/Motorola Solution.png                     |  Bin 0 -> 635276 bytes
+   img/NAVER.png                                 |  Bin 0 -> 632042 bytes
+   img/Nakivo.png                                |  Bin 0 -> 625781 bytes
+   img/Oivan.png                                 |  Bin 0 -> 609394 bytes
+   img/Persefoni AI.png                          |  Bin 0 -> 657900 bytes
+   report.md                                     | 1353 +++++++++++++++++++++++
+   req2.md                                       |    1 +
+   req3.md                                       |   54 +
+   19 files changed, 2387 insertions(+)
+```

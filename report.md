@@ -1,4 +1,4 @@
-﻿# HW 01 – QA/QC Jobs · 20 Defects · Test a Physical Product
+# HW 01 – QA/QC Jobs · 20 Defects · Test a Physical Product
 
 **Student ID:** 23127060
 **Full Name:** Ninh Văn Khải
@@ -120,7 +120,7 @@ With the product being an Agentic AI platform, testers must understand non-deter
 **Location:** Vietnam (Full-time, Vietnam labour regulations)  
 **Link:** https://www.linkedin.com/company/persefoni
 
-![Persefoni AI – QA Engineer Job Posting](img/Persefoni AI.png)
+![Persefoni AI – QA Engineer Job Posting](img/Persefoni_AI.png)
 
 ### Job Description
 
@@ -938,6 +938,8 @@ The following inaccuracies in the original research (`req2.md`) were identified 
 | **Certification**    | IEMM E-0193                                      |
 
 > 📸 **Photo:** `img/device_studentID.jpg` — ảnh thiết bị chụp cùng thẻ sinh viên 23127060 _(nộp kèm theo yêu cầu anti-cheat)_.
+> 📸 **Serial Number Photo:** `img/serialNumber.jpg`
+> ![Serial Number](img/serialNumber.jpg)
 
 ---
 
